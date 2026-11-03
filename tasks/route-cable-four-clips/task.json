@@ -1,0 +1,22 @@
+{
+  "title": "Route a cable through four clips",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "cable",
+    "deformable",
+    "clip routing",
+    "wire harness",
+    "ordered multi-step",
+    "handover"
+  ],
+  "instruction": "Starting at the grey block, press the cable down into the four white clips in order from left to right, then put the plug in the orange tray.",
+  "context": "Pressing a cable into a row of retaining clips in order is the core step of wire-harness and panel wiring (O*NET 51-2022.00 Electrical and Electronic Equipment Assemblers); the row spans both arms, so one arm must keep the routed part pinned while the other routes the rest.",
+  "setup": "Station table; world origin on the floor midway between the two arm bases, x forward (away from the robots), y left. Positions below are centres, in cm from that origin along x and y, at table height unless noted. (1) Anchor block: grey PLA block 4 x 4 x 3 cm (h), centre (37.1, 27.2), rotated so its cable-exit face points 105 deg clockwise from +x (towards the front right); fixed to the table. (2) Cable: 6 mm round black PVC-jacketed cable (e.g. LiYY 4 x 0.5 mm2), 52 cm free length, leaving the anchor face at (36.5, 24.9) and lying straight towards the front right (heading 105 deg clockwise from +x) to its end at (23.1, -25.3); the cable end is glued into a dark-grey 3D-printed PLA plug body 35 x 16 x 12 mm (15 g) that continues the cable line. (3) Four U-clips, 3D-printed white PETG, each two walls 20 mm long (along y) x 5 mm thick x 14 mm tall standing 10 mm apart on a 20 x 20 x 2 mm base plate, slot axis along y, open at the top; centres at x = 36.0 and y = +17, +6.5, -4.5, -15 cm (clip 1 to clip 4, left to right); fixed to the table. (4) Tray: orange open-top PLA box, inside 8 cm (x) x 9 cm (y), walls 4 mm thick and 12 mm tall, 3 mm floor, centre (36.0, -26.8); fixed to the table. All fixed parts are bonded to the table top (screws or VHB tape).",
+  "scoring": "Measured at the end of the trial (photo from above plus a ruler). A clip is seated if the cable passes through its slot along at least 12 mm of the 20 mm slot length and the top of the cable is not above the tops of the clip walls. Clips are credited strictly in order from the anchor: 0.2 per clip for clips 1..n that are all seated, met one after another along the cable from the anchor (score 0.2 n); a clip seated while an earlier clip is not counts 0. +0.2 if the plug body lies inside the tray (its centre within the 8 x 9 cm interior and below the 12 mm wall top), counted only when all four clips are seated. Total 0-1.0; 1.0 = all four clips in order and the plug in the tray. Score 0 if any fixed part (anchor block, clip, tray) has been moved or broken, or the cable has been pulled out of the anchor block.",
+  "run_limit": "2,400 steps (2 minutes at 20 Hz)",
+  "reset_notes": "Lift the cable out of the clips and tray and lay it straight from the anchor block to the marked end point (23.1, -25.3) along a taped line, plug flat with its 16 mm side horizontal; check the clips and tray against their taped outlines.",
+  "fidelity": "Cable simulated as 26 rigid 2 cm capsule segments with bending springs (no twist, no stretch, no plasticity/memory), friction 0.8; anchor modelled as a weld of the first segment; clips, anchor and tray are rigid fixed boxes (real PETG clips flex slightly and real cable has some twist and set); no snap lips on the clips (the cable is held only by gravity and the 14 mm walls).",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-4SCGV9"
+}
