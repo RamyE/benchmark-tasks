@@ -1,0 +1,23 @@
+{
+  "title": "Uncross two tangled cables",
+  "category": "Societal relevance",
+  "keywords": [
+    "bimanual",
+    "cable",
+    "deformable",
+    "untangling",
+    "crossing removal",
+    "over-under",
+    "plug insertion",
+    "charging dock"
+  ],
+  "instruction": "The red and blue cables are crossed. Untangle them so that they no longer cross each other, then put the red cable's plug into the red (left) port and the blue cable's plug into the blue (right) port of the charging dock, and let go of both plugs.",
+  "context": "Cables from two devices that end up crossed on a desk or charging station are a daily household and office chore: plugging each one into its port without first uncrossing them leaves a tangle. The robot has to recognise which cable lies on top, lift it clear and pull the other one out from under it, a basic over/under manipulation of two deformable objects, rather than just carry ends to targets.",
+  "setup": "Station table; positions in cm from the midpoint between the two arm bases projected onto the table (x forward away from the robot, y to the robot's left). Two grey device boxes (10 x 12 x 6 cm tall, PLA or wood) at the back: front faces at x 50.6, centred on y +10 (left device) and y -10 (right device). A red 6 mm round PVC cable, 32 cm long, leaves the left device and is clamped to the table 6 mm in front of its front face, at (x 50, y +10); a blue 6 mm PVC cable, 32 cm long, leaves the right device and is clamped the same way at (x 50, y -10). Each cable has a plug on its free end (3D-printed PLA box 35 x 16 x 12 mm, long side along the cable, 10 g), red on the red cable and blue on the blue one. Start: both cables lie straight on the table. The red one runs from its device diagonally to the front right (heading 43.4 deg right of straight towards the robot), ending with its cable end at (x 26.8, y -12) and its plug centre at about (x 25.5, y -13.2). The blue one is its mirror image (cable end at (x 26.8, y +12), plug centre at about (x 25.5, y +13.2)) and lies on top of the red one where they cross, at about (x 39.5, y 0). Charging dock at the front centre: a grey block (5 x 6 x 3 cm tall) spanning x 13.25-18.25, centred on y 0, with a red label (3 x 2.4 cm) on its top above the left port and a blue label above the right port. In front of the block, towards the devices, three white PLA walls (45 mm long along x from x 18.25 to 22.75, 4 mm thick, 8 mm tall) at y +2.8, 0 and -2.8 form two U ports, each 24 mm wide, open at the top and at the end facing the devices: the red port centred on y +1.4 and the blue port centred on y -1.4.",
+  "scoring": "Measured at the end of the episode from a top photo. Score 0 if a gripper still touches or holds a cable or plug (both grippers open and at least 3 cm from both cables), if the two cables cross anywhere in top view (one lies over the other at any point, plugs included), if a plug sits in the other colour's port, or if a cable was pulled out of its device or the dock was moved. Otherwise, with the cables not crossing: 0.2, plus 0.4 for each plug seated in its own port (plug between that port's walls, lying on the table, at most 1 cm sticking out of the open end): red in red and blue in blue = 1.0 (success). Doing nothing scores 0 (the cables cross once). Success when the full condition holds for 1 s with both cables at rest.",
+  "run_limit": "2,400 steps (2 minutes at 20 Hz)",
+  "reset_notes": "Take both plugs out, lay the red cable straight from its device to the tape mark at (x 26.8, y -12), then lay the blue cable straight from its device to the mark at (x 26.8, y +12) on top of the red one, plugs lying flat. Check the device boxes and the dock are on their marks.",
+  "fidelity": "Each cable is 16 rigid 2 cm capsule segments with bending springs, no twist, no plasticity, friction 0.8; the cable ends at the devices are welded in place; plugs are rigid boxes welded to the end segments; devices, dock and port walls are fixed rigid boxes; labels are visual only. Crossings are counted on the centre lines in top view (height ignored).",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-4E7YDR"
+}
