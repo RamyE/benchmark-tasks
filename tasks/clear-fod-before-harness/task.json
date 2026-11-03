@@ -1,0 +1,24 @@
+{
+  "title": "Clear FOD before laying a harness",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "cable",
+    "deformable",
+    "foreign object debris",
+    "FOD",
+    "inspection",
+    "wire harness",
+    "sequencing",
+    "pick and place"
+  ],
+  "instruction": "The two steel discs on the harness board are loose debris. First put both discs in the red bin, then lay the black cable along the blue line with its plug inside the plug outline at the end of the line. Never lay the cable over or against a disc that is still on the board.",
+  "context": "Foreign object debris (washers, clippings) trapped under aircraft wiring chafes insulation and causes faults, so harness boards are cleared into FOD bins before layup (NAS 412 FOD prevention; O*NET 51-2022.00 Electrical and Electronic Equipment Assemblers). The robot must notice and remove debris before routing, not route over it.",
+  "setup": "cm from the midpoint between the arm bases on the table; x forward, y left. Board: white 1 mm laminated layout sheet, x 25-39, y -23 to 31, taped down; 6 mm dark-blue route line along x 32 from the block (y 25) to the outline (y -15); blue plug outline (inside 3.6 x 6.5 cm) centred x 32, y -17.25. Connector block: grey PLA 4 x 3 x 2.5 cm box, centre x 32, y 26.6, fixed. Cable: black 6 mm PVC cord, 40 cm, leaving the block at x 32, y 24.5, lying straight 18 deg off the line towards the robot (heading 108 deg clockwise from +x), end at x 19.6, y -13.5; black PLA plug 35 x 16 x 12 mm (12 g) glued on the end. Debris: two dark-grey steel discs 30 mm dia x 6 mm (30 g) lying on the line at y 8 and y -8. FOD bin: red open box, inside 8 x 8 cm, walls 3 cm, centre x 15, y 0, fixed.",
+  "scoring": "Measured at the end (top photo + ruler). Score 0 if: at any moment the cable or plug touches or lies on a disc that rests on the board or table (in top view within 2 mm of the disc edge and less than 1 cm above the disc; judged from video); a disc is not inside the bin at the end; a gripper still holds the cable, plug or a disc; the block, board or bin was moved or the cable pulled out of the block. Otherwise: 0.5 (both discs in the bin) + 0.25 if the whole plug body lies inside the outline + 0.25 if every point of the cable lies on the board within 1.5 cm of the line. 1.0 = discs binned, cable on the line, plug in the outline.",
+  "run_limit": "1,200 steps (1 minute at 20 Hz)",
+  "reset_notes": "Empty the bin; put the discs flat on the line at y 8 and y -8 (tape marks); lay the cable straight from the block to the tape mark at x 19.6, y -13.5, plug flat at its end.",
+  "fidelity": "Cable is 20 rigid 2 cm segments with bending springs, no twist or plasticity; its block end is welded and the plug is a rigid box. Discs are plain rigid cylinders (no washer hole). Board, line and outline are thin fixed boxes; block and bin are fixed. Touching a disc is judged by geometry (top view within 2 mm, under 1 cm above it), as from the video.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-WBYUJN"
+}
