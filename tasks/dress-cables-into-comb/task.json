@@ -1,0 +1,23 @@
+{
+  "title": "Dress three cables into a comb",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "cable",
+    "deformable",
+    "wire harness",
+    "cable comb",
+    "untangling",
+    "colour matching",
+    "precision placement"
+  ],
+  "instruction": "Press the red, blue and yellow cables into the cable comb so each sits in its matching coloured slot, without crossing each other.",
+  "context": "Combing wires into lacing bars or combs keeps harness branches parallel and in order; it is routine work for harness assemblers (O*NET 51-2022.00 Electrical and Electronic Equipment Assemblers). The task tests untangling crossed cables, matching colours to slots and accurate two-handed placement of a deformable object.",
+  "setup": "Coordinates in cm: x forward from the line through the two arm bases, y to the left of the midpoint between them, heights above the table top. (1) Cable-entry block: grey 3D-printed PLA box 4 x 10 x 3 cm (depth x width x height), standing on the table, centre at (20.6, 17.0), turned so its exit face points 55 deg to the right of straight ahead; clamped/screwed to the table. (2) Three 6 mm round PVC-jacketed cables, 38 cm long, jackets red, blue and yellow, each passing through a 6.5 mm hole in the exit face and fixed there (cable tie / glue inside the block). Hole centres: red (19.1, 13.0) at 1.05 cm height, blue (22.0, 15.0) at 0.35 cm, yellow (24.9, 17.0) at 0.35 cm (3.5 cm apart along the face). Starting layout: blue and yellow lie straight along the face normal (55 deg right of forward); red leaves its hole 20 deg further left (35 deg right of forward) and lies straight across the top of blue and yellow, so the cables cross and their free-end order is reversed. (3) Cable comb: white 3D-printed PLA, base 9.0 x 2.0 x 0.4 cm (x by y by height) centred at (24.0, 0.0), with four 1.2 cm tall teeth across the full 2.0 cm depth: 1.05, 2.1, 2.1 and 1.05 cm wide, leaving three open-top slots 0.9 cm wide whose axes run along y (left to right) at x = 21.0 (red), 24.0 (blue) and 27.0 (yellow); slot floor 0.4 cm above the table. Screwed/clamped to the table. (4) Slot markers: coloured PLA tabs 0.9 x 1.5 x 0.2 cm on the table at the right-hand mouth of each slot (y -1.0 to -2.5), red at x 21.0, blue at 24.0, yellow at 27.0. Nothing else on the table.",
+  "scoring": "Measured at the end of the trial from a top photo plus a 1 mm feeler gauge. A cable is seated in a slot when, over the whole 2 cm depth of the comb, it lies inside that slot (centre within the 9 mm gap), its top is no more than 1 mm above the tooth tops, and it continues at least 2 cm out of both sides of the comb. Crossing check: in the top view, the paths of the three cables from the block to the comb's near face must not cross each other; if any two cross, the score is 0. Otherwise, score = 0.3 per cable seated in the slot of its own colour (not seated or wrong slot: 0 for that cable) + 0.1 when all three are; so 0, 0.3, 0.6 or 1.0. The episode ends early with 1.0 when all three are seated in their own slots with no crossing for 1 s. If the comb or the block is moved, or a cable is pulled out of the block, the trial scores 0.",
+  "run_limit": "1,800 steps (90 s at 20 Hz)",
+  "reset_notes": "Lift the cables out of the comb, lay blue and yellow straight 55 deg right of forward from their holes, then lay red straight 35 deg right of forward over them (use a printed 1:1 layout sheet or tape marks at the free ends: red end at (50.3, -8.8), blue at (43.8, -16.1), yellow at (46.7, -14.1)). Block and comb stay fixed.",
+  "fidelity": "Cables are chains of 2 cm rigid capsule segments with bending springs (stiffness 0.01 N m/rad per joint), no twist, no plasticity or memory; the first 2 cm leaves the block rigidly in the hole's direction. Block, comb and tabs are rigid fixed boxes (no slot chamfers, no snap-fit retention). Cable-cable contact is simulated. Red's hole is 7 mm higher than the others so it can start lying on top of them.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-BSAJV9"
+}
