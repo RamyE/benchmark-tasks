@@ -1,0 +1,23 @@
+{
+  "title": "Leave a drip loop before a cable gland",
+  "category": "Safety and alignment",
+  "keywords": [
+    "bimanual",
+    "cable",
+    "deformable",
+    "drip loop",
+    "weatherproofing",
+    "cable dressing",
+    "slack management",
+    "safety shape"
+  ],
+  "instruction": "The black cable comes out of the gland on the side of the grey enclosure. Lay the cable over the support hook so that, between the hook and the gland, it hangs down in a drip loop whose lowest point is 3 to 7 cm below the centre of the gland, then rises into the gland. The rest of the cable hangs down on the far side of the hook. Then let go of the cable.",
+  "context": "Installers of outdoor cameras, antennas and enclosures must leave a drip loop: the cable dips below its entry before rising into the gland, so rain drips off the low point instead of running inside (O*NET 49-2097.00 Audiovisual Equipment Installers; 47-2111.00 Electricians). This is a safety shape judged against the entry height, not a route or a sag between two supports; a cable run level or down into the gland looks similar and scores 0.",
+  "setup": "Station table; positions in cm from the midpoint between the two arm bases projected onto the table (x forward away from the robot, y to the robot's left, z up from the table top). Enclosure: grey 3D-printed PLA box 8 (x) by 12 (y) by 8 (z) cm, centred at x 27, y 20, its bottom 6 cm and top 14 cm above the table, standing on a grey 4 x 4 cm square PLA post 6 cm tall centred under it; both fixed to the table. Cable gland: black PA6 gland nut modelled as a 14 x 18 x 18 mm block on the enclosure's right-hand face (y 14), centre at x 27, y 13.3, 10.0 cm above the table, its axis horizontal and turned 23 degrees from straight right (-y) towards the robot. Cable: black 6 mm round PVC cord (e.g. 4-core LiYY 4 x 0.5 mm2), 50 cm long, fixed in the gland (the gland end does not move or slide); its free end carries a black PLA plug body 35 x 16 x 12 mm (12 g), long side along the cable. Start: the cable leaves the gland horizontally and runs as a nearly straight line sloping down to the table, along the gland axis, with the plug lying flat on the table at about x 7, y -33. Support hook: grey, fixed to the table at x 27, y -5 (18 cm to the right of the gland, 5 cm in front of the robot side of the cable line): a 20 mm round post topped by a 3D-printed PLA open-top U cradle, floor 32 (x) by 25 (y) by 8 mm with its top face 14.0 cm above the table (4 cm above the gland centre), two side walls 4 mm thick and 12 mm tall above the floor, inner gap 24 mm, so the slot runs left-right (along y) and is open at both ends and at the top.",
+  "scoring": "Measured at the end of the episode with a ruler held vertically next to the loop (or a side photo with a scale). Score 0 if a gripper still touches or holds the cable (both grippers open and at least 3 cm from the cable and plug), or if the enclosure, gland or hook was moved, or the cable was pulled out of the gland. Score 0 unless the cable lies over the hook: part of it rests in the cradle slot (between the walls, at most 12 mm above the floor) and its plug end lies on the far side of the hook (at least 3 cm past the hook's centre, away from the gland) below the hook floor. Then drip = height of the gland centre minus the lowest point of the underside of the cable between the gland and the hook. Drip 3-7 cm = 1.0 (success); drip 1.5-3 cm (too shallow) or more than 7 cm (loop down near or on the table) = 0.4; drip less than 1.5 cm (cable level, taut, or running down into the gland from above: no drip loop) = 0. Success (1.0) requires the full condition to hold for 1 s with the cable at rest.",
+  "run_limit": "1,200 steps (1 minute at 20 Hz)",
+  "reset_notes": "Lift the cable off the hook and let it hang from the gland in a straight line to the table along the gland axis, plug lying flat on the tape mark at x 7, y -33. Check that the enclosure, gland and hook stand at their marks and that the cable has not been pulled through the gland (tape mark on the cable at the gland face).",
+  "fidelity": "Cable: 25 rigid 2 cm segments (octagonal colliders, round visuals) with bending springs, no twist or plasticity, friction 0.8. Its gland end is welded to the world 6 mm outside the solid gland block (the cable inside the enclosure is not modelled). Plug: rigid box welded to the last segment. Enclosure, gland, stand, post and cradle are fixed rigid shapes. Water is not simulated; the drip loop is judged by geometry (cable centreline minus radius).",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-GZ7TYW"
+}
