@@ -1,0 +1,23 @@
+{
+  "title": "Hide a power strip in a cable box, one cord per end slot",
+  "category": "Societal relevance",
+  "keywords": [
+    "bimanual",
+    "cable",
+    "container packing",
+    "cord routing",
+    "slot seating",
+    "lid",
+    "household",
+    "cable management"
+  ],
+  "instruction": "Hide the unplugged power strip in the cable box: put the strip inside, lead its black power cord out through the slot in the box's right end and the blue USB cable out through the slot in its left end, then put the lid on flat and let go. No cord may lie over the box's rim.",
+  "context": "A cable box keeps a power strip out of sight, its cords leaving through openings at the ends (Bluelounge CableBox, retailer copy: \"Two outlets run on both sides of CableBox to allow for necessary cables to come out\"). Technical Safety BC notes \"Pets often chew on wires and cords\". This is a tidiness task; it makes no safety claim for boxing a strip. A cord left over the rim is pinched under the lid and lifts it. Each end slot is reachable only by the arm on its side, so both arms are needed.",
+  "setup": "Origin: table top midway between the arm bases; x forward, y left (cm). Box: dark grey, fixed, 1 cm walls 6 cm tall, inside x 24.5-35.5, y -11.5 to +11.5, 4 mm floor. Each end wall (y +-12) has a 14 mm U slot at x 30, from the rim down to 1.5 cm above the table. Lid: grey 13 x 25 x 0.6 cm plate, 80 g, flat on the table centred x 46, y 22, with a 1.4 x 5 x 2 cm, 10 g handle on top. Strip: white 5 x 18 x 3.5 cm, 150 g, centred x 14, y 0, long side along y. Black 7 mm power cord, 32 cm, from its right end face at mid-height straight to y -41, black 35 x 25 x 18 mm plug. Blue 5 mm USB cable, 30 cm, from its left end face straight to y +39, grey USB-C plug.",
+  "scoring": "Score 0 if at the end: any part of the strip is outside the box's inside or above the rim; a lid underside corner is more than 3 mm off the rim height (e.g. resting on a cord), its centre is more than 1 cm from the box centre or it is turned more than 5 deg; a gripper is within 3.5 cm of the strip, a cord, a plug or the lid; or a cord crosses a wall or the rim except through an end slot, comes back in, or both cords use the same slot. Otherwise 1.0 if the power cord leaves through the right slot and the USB cable through the left; 0.5 if swapped.",
+  "run_limit": "1,600 steps (80 seconds at 20 Hz)",
+  "reset_notes": "Take the strip out and lay it centred at x 14, y 0 along y; lay the power cord straight to the right along x 14 and the USB cable straight to the left along x 14. Put the lid flat on the table centred at x 46, y 22, long side along y. In a real trial the box is taped to the table; score 0 if it moves more than 1 cm.",
+  "fidelity": "Cords: 2 cm rigid segments with bending springs (no twist, stretch or memory), spawned straight. Each is welded into a strip end face (real: strain reliefs; the USB cable would be plugged into a USB port, not fixed). Strip: one rigid box, unplugged, no outlets or ports modelled. Box: fixed rigid boxes (real: taped down). Lid: rigid plate with a welded handle, no hinge or latch.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-A3VUB5"
+}
