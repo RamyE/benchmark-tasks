@@ -1,0 +1,26 @@
+{
+  "title": "Unwrap a grazing tether from a post by carrying its collar back round against the wrap",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "hand-over",
+    "rope",
+    "deformable",
+    "tether",
+    "farm",
+    "untangling",
+    "wrapping",
+    "topology",
+    "placement",
+    "release"
+  ],
+  "instruction": "Unwrap the red tether from the wooden post and leave its blue collar in the white circle.",
+  "context": "A tethered animal can walk round a post or tree until its tether is wound on it. Veterinary tethering guidelines (AVA) want the site \"clear of obstructions that may cause the tether to become entangled\" and warn \"an animal can be choked when the tether becomes entangled\". Freeing it means walking the collar end back round against the wrap. O*NET 45-2093.00 Farmworkers, Farm, Ranch, and Aquacultural Animals: \"Shift animals between grazing areas to ensure that they have sufficient access to food.\"",
+  "setup": "Station table; cm from the midpoint between the arm bases (x forward, y left). Post: brown wooden round post, 7 cm diameter, 18 cm tall, axis x 36, y 0, fixed. Ground ring: dark grey steel plate 3 x 3 x 1.4 cm, centre x 38, y -27, fixed. Tether: red 8 mm braided cord, 80 cm, 75 g, clipped to the ring by a swivel snap on a 20 N/m shock spring; it runs from x 38, y -25 along +y to the far side of the post, goes about 210 deg round it counter-clockwise seen from above (hugging it), crosses over its own standing part near x 39, y -16 and runs straight out to the collar. Collar: blue PLA block 40 x 24 x 20 mm, 20 g, on the tether's free end, centre x 50, y -39.5. Grazing circle: white painted ring, inner radius 4 cm, 8 mm wide, centre x 50, y 40.",
+  "scoring": "Turns = how many times the tether goes round the post, ring to collar (start: 1). Score 0 if at any time: it went round twice, any part of it rose to within 1 cm of the post top's height while within 3 cm of the post's side (taken over the top), its ring spring was drawn out more than 2 cm (hauled on), or the collar moved over 3 cm with no gripper within 5 cm of it (towed by the tether). Also 0 if at the end: a gripper is within 3.5 cm of the tether or collar, the tether still goes round the post, or the collar centre is outside the circle. Otherwise 0.5; 1.0 if every part of the tether and collar is at least 1 cm from the post. 1.0 must hold 1 s.",
+  "run_limit": "1,200 steps (1 minute at 20 Hz)",
+  "reset_notes": "Lay the tether from the ring along the tape marks: up the right of the post to its far side, round it counter-clockwise past the left and front sides, then over the standing part and straight out to the collar, collar centre on its tape mark at x 50, y -39.5, long side along the tether. Clip the snap back on the ring.",
+  "fidelity": "Tether: 40 rigid 2 cm capsule segments with bending springs, no twist or plasticity; the start lay is written at reset and held by friction. Its ring end is a vertical swivel on a 20 N/m spring along its lead (a tie-out shock spring); in sim the spring also keeps a hauled line from failing the solver. Collar: rigid block welded to the end. Post, ring and circle are fixed. Release and towing are judged from gripper positions.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-LXTUUE"
+}
