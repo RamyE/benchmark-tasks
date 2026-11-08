@@ -1,0 +1,24 @@
+{
+  "title": "Recover a buried corner iron from two witness-nail tapes and stand the stake on it",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "cable",
+    "tape",
+    "surveying",
+    "witness ties",
+    "distance-distance intersection",
+    "placement",
+    "measurement",
+    "construction layout"
+  ],
+  "instruction": "The corner iron is buried under the sand. The two tapes are tied to its witness nails and each red mark is the iron's distance from that nail. Find where the iron is, stand the orange stake on it, then let go.",
+  "context": "Survey technicians \"Search for section corners, property irons, or survey points\" and \"Set out and recover stakes, marks, or other monumentation\" (O*NET 17-3031.00). Reference markers are kept \"to restore a control point to its original position if disturbed\" (Iowa DOT). Each tie is a radius: drawn taut from its nail the mark sweeps an arc; the iron is where the two arcs cross under the sand, not at their other crossing beyond it.",
+  "setup": "Station table, cm from the midpoint between the arm bases (x forward, y left). Tan 2 mm felt mat (the sand) at x 22-46, y -12..+14. Buried iron: no object, a point at (27, +3) under the mat. Two black nails, 12 mm round, 40 mm tall, at (45.6, +41.3) and (45.5, -41.3); each holds the zero end of a white 6 mm braided tie tape through a 150 N/m extension spring, zero points at (45, +40) and (45, -40). Tape 1 (left) 46.1 cm, tape 2 (right) 51.5 cm, each with a 2.2 cm red band centred 40.7 / 46.1 cm from the zero and a 20 x 20 x 10 mm white tab on its end. Each lies in a U: 15 / 18 cm out along +x, a 3.5 cm bend outboard, back towards the robot along y +47 / -47. Orange wooden stake, 26 mm round, 60 mm tall, 50 g, standing on the mat at (36, -2).",
+  "scoring": "Ruler from the stake centre to the iron pin under the mat. Score 0 if: a tape was never drawn straight (spring out 3 mm with its red band within 1.5 cm of the iron's distance from the zero point); a spring was ever drawn out over 20 mm; the stake ever tilted over 20 deg; at the end a gripper is within 4 cm of a tape, tab or the stake; or the stake is not standing (tilt 10 deg or more). Else by the stake centre's distance from the iron: 1.0 within 1.2 cm, 0.6 within 2.5 cm, 0.3 within 4 cm, else 0. The other crossing of the two arcs (63, +3) is 36 cm away.",
+  "run_limit": "2,400 steps (2 minutes at 20 Hz)",
+  "reset_notes": "Lay each tape back in its U (out from the nail away from the robot, bend outboard, back towards the robot), tab flat; stand the stake at (36, -2). Nothing is randomised.",
+  "fidelity": "Toy scale. Tapes are 6 mm cords of 2.2 cm rigid segments with bending springs (no stretch or twist); each zero end hangs on its nail by a planar spring (150 N/m, swivel, no vertical travel), standing in for a tension spring. Bands are one red segment. The iron is a point in the score. The stake is a rigid cylinder. Let go is judged by gripper distance.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-HK33FV"
+}
