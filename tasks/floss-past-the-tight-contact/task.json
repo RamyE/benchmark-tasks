@@ -1,0 +1,24 @@
+{
+  "title": "Floss two model teeth past their tight contact without snapping into the gum, wiping both sides",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "deformable",
+    "floss",
+    "dental",
+    "oral hygiene",
+    "training model",
+    "tension",
+    "manner",
+    "contact-rich"
+  ],
+  "instruction": "A white plastic two-tooth model stands on a red block on the table. Pass the floss down between the two plastic teeth, wipe the side of each tooth in the gap, then take the floss out and let go.",
+  "context": "Flossing is taught in dental practice (O*NET 31-9091.00 Dental Assistants: \"Instruct patients in oral hygiene and plaque control programs.\"). ADA: \"Hold the floss tightly between your thumbs and forefingers.\" \"Guide the floss between your teeth using a gentle, rubbing motion. Never snap the floss into the gums.\" \"When the floss reaches the gum line, curve it into a C shape against one tooth.\" \"Gently rub the side of the tooth with an up-and-down motion\".",
+  "setup": "Station table, cm from the midpoint between the arm bases (x forward, y left), heights above the table. Pink gum base 13 x 4 x 4 cm at x 30-43, y -2..+2. On it two white tooth blocks 5 x 4 x 5.5 cm, each with a 1.2 cm round ridge along y on its gap face, 1 cm below its top: front tooth fixed at x 30.5-35.5; back tooth x 36.5-41.5 on a slide along x, spring-pressed (0.7 N preload, 120 N/m, 8 mm travel) so the ridges touch at x 36, height 8.5. Below the ridges the faces are 1 cm apart; a dark-pink papilla 0.95 cm wide fills the gap bottom up to height 4.8. White 3 mm floss cord, 20 cm, lies along y at x 24, y -10..+10; each end joins a blue pull tab (2.5 x 1.2 x 2.5 cm, standing, centre y +-11.6) through a 100 N/m elastic link.",
+  "scoring": "Score 0 if: the floss, under tension (a link stretched 1 cm, 1 N), reaches the papilla (within 3 mm) moving down faster than 0.12 m/s (snapped); a gripper or tab touches a tooth, the papilla or the base; a link is stretched to 4.5 cm (4.5 N, pulled apart); the floss never went down past the contact (back tooth pushed 1.5 mm open, then floss 4 mm below the contact between the teeth); at the end a gripper is within 3 cm of the floss or a tab. Otherwise 0.3; 0.6 if both teeth's gap faces were wiped (floss touching the face over 1 cm, moved 8 mm or more up or down 4 times on each) but floss is still between the teeth at the end; 1.0 if both wiped and the floss is out.",
+  "run_limit": "1,200 steps (60 s at 20 Hz)",
+  "reset_notes": "Take the floss out of the model, lay it straight along y at x 24 with the tabs standing at y +-11.6. Let the back tooth's spring close the contact. Nothing is randomised.",
+  "fidelity": "Teeth are 8x-scale blocks; the contact is two 12 mm round ridges, one on a sprung slide. Floss is a 3 mm cord of 1 cm rigid segments with bending springs, no stretch or twist; tab links are elastic (real: rubber loop, 4.5 N breakaway). Gum is rigid, so a snap is judged by speed under tension, not tissue damage. Sim limits: a long, straight, taut floss in free air can go non-finite (scores 0); taut floss lowered onto the gum can slip several mm in one step and counts as a snap.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-TKRX5Q"
+}
