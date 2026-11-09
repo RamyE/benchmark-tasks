@@ -1,0 +1,27 @@
+{
+  "title": "Burton a slung crate over the hatch coaming by hauling one cargo fall while easing the other",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "rope",
+    "deformable",
+    "cargo falls",
+    "burton rig",
+    "married falls",
+    "suspended load",
+    "sheave",
+    "two-line coordination",
+    "maritime",
+    "stevedoring",
+    "constraint-keeping"
+  ],
+  "instruction": "This crate has to go from the hold side to the pier: use the two cargo falls to lift it over the coaming and land it on the green pad, keeping your hands off the load and out of the dark hatch square. Then let go of both falls.",
+  "context": "Cargo gear: \"the Burton System of cargo handling (conventional gear consisting of two cargo derricks with married falls)\" (OSHA 29 CFR 1918 App. III); \"The Married Fall system consists of handling cargo by two connected falls\" (US Navy). O*NET 49-9096.00 Riggers: \"Tilt, dip, and turn suspended loads to maneuver over, under, or around obstacles, using multi-point suspension techniques.\"",
+  "setup": "Station table, cm from the midpoint between the arm bases (x forward, y left), heights above the table. Dark hatch square (mat) 22x34x0.2 at x27-49, y-17..+17; grey coaming wall 16x3x7 on it at x30-46, y-1.5..+1.5. Pads 8x8x0.3 at x38: grey hold pad y+10, green pier pad y-10. Orange crate 4 cm cube, 80 g, on the hold pad, eye on its lid. Head sheaves (5 cm groove, 8.4 cm grey cheeks, axle along x) 30 cm up at x38, y+-20, cantilevered 6 cm from dark 2 cm posts at x44. Heel sheaves (same, axle along y) 8 cm up at x34.9, y+-23.1, on dark blocks at y+-27.9. 6 mm falls shackled 1 cm apart to the eye: blue 86 cm over the y+20 sheave, yellow 96 cm over the y-20 sheave; each drops to its heel sheave, passes under it and runs along the deck towards the robot to a red 2.4x2x1.2 cm toggle at x11. Both falls just taut, crate on its pad.",
+  "scoring": "Score 0 if at any time: the crate touches the coaming; it drops, swings loose or is jerked (over 0.6 m/s, or 0.4 m/s up or down); its lid comes within 8 cm of a head-sheave axle; a robot part touches it or comes within 3 cm of it; a gripper enters the dark hatch square (above the mat); one gripper is within 2.5 cm of both falls. Also 0 unless at the end both grippers are 4 cm or more from the crate and both falls and the crate rests upright (tilt < 15 deg) on the deck, centre on the pier side (y <= -4 cm). Then 1.0 if its centre is within 1.5 cm of the green pad's centre (tilt < 10 deg); 0.6 within 3 cm; else 0.3.",
+  "run_limit": "900 steps (45 s at 20 Hz)",
+  "reset_notes": "Set the crate square on the grey hold pad. Lay each fall from the crate's eye up over its head sheave, down to and under its heel sheave and along the deck towards the robot, toggle at x 11; take in the slack so both falls hang just taut. Nothing is randomised.",
+  "fidelity": "Toy scale. Falls: 2 cm rigid segments, bending springs, no stretch. Sheaves are fixed smooth wheels (friction 0.1) standing in for free-turning ones; posts, heel blocks and the coaming are equally smooth (friction 0.1; a real coaming grips more, set low to keep the sim finite). Shackles are ball joints; the crate's spin is damped (3/s) for swivel friction. Coaming gap, speed and two-blocking are read from the crate pose at 240 Hz, robot contact by a PhysX contact query (real: video).",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-P28GVQ"
+}
