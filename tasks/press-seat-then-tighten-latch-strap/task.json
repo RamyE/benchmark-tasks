@@ -1,0 +1,25 @@
+{
+  "title": "Fit a child seat tightly: press it into the cushion while the other hand takes up the anchor strap",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "strap",
+    "webbing",
+    "deformable",
+    "child car seat",
+    "LATCH",
+    "lower anchors",
+    "tensioning",
+    "take up slack",
+    "two-hand coordination"
+  ],
+  "instruction": "The blue shell is an empty child car seat on a vehicle seat cushion. Tighten its lower-anchor strap so the car seat is fitted firmly, then let go.",
+  "context": "Child-seat fitting on lower anchors: \"Press down firmly on the car seat and tighten the lower anchor straps.\" (Ohio State BuckleUp). CHOP: \"In order to get it to fit tightly, you need to press the seat down and back while tightening the straps.\" O*NET 33-9094.00 School Bus Monitors: \"Buckle seatbelts or fasten wheelchair tie-down straps to secure passengers for transportation.\"",
+  "setup": "Station table, cm from the midpoint between the arm bases (x forward, y left), heights above the table. Grey cushion block 28 x 50 x 6 cm at x 15-43, y -25..+25 with a pit x 19.7-38.3, y -10.3..+10.3. In it a blue seat shell 18 x 20 x 8 cm, 500 g, centre (29, 0), top 12.2 high, on a spring (300 N/m, 4 N preload, 3 cm travel). On its top two blue ridges at x 33.3 and 36.7 and a 3.4 x 12 cm cover bar over y -6..+6 (belt path). Black 8 mm strap, 40 cm: hooked to a dark anchor block at (35, +16), through the belt path, into a dark connector channel at x 35, y -14..-27; its 25 g slider inside; orange tail tab 1.4 x 9 cm out the end, joined by a 4 N breakaway link. About 1 cm slack.",
+  "scoring": "Score 0 if: the tab's breakaway link is ever pulled past 4 N (torn); the strap ever leaves the belt path under the cover; at the end a gripper is within 3 cm of the strap, the tab or the shell. Otherwise by how far the shell top sits below its rest height (held by the strap): >= 18 mm 1.0 (taken up while pressed firmly); >= 10 mm 0.5 (taken up while pressed part way); under 10 mm 0. Pulling the tab alone leaves 0 mm: the taut strap needs more than 4 N to push the seat down.",
+  "run_limit": "1,200 steps (60 s at 20 Hz)",
+  "reset_notes": "Let the shell spring up to its top stop. Push the slider back against the connector's entry lips, so about 1 cm of strap is slack, and lay the strap from the left anchor up through the belt path (under the cover bar) and down into the connector. Reattach the tab if it came off. Nothing is randomised.",
+  "fidelity": "Strap: 2 cm rigid segments with bending springs (no stretch or twist; round, not flat webbing). Cushion: a vertical spring, shell slides only up and down. One-way adjuster: stiff spring on the slider (2 mm give at 7 N). Tail: rigid strip. The 4 N breakaway link is a task rule (a one-arm pull must not do the job), read from its stretch; tab stays on in sim. Cover bar keeps the strap in the belt path. Real: printed shell on a sprung slide, cam buckle, magnetic tab.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-9U9QLV"
+}
