@@ -1,0 +1,25 @@
+{
+  "title": "Spring a boat's stern off a tight berth on the bow spring, then bring all four lines aboard",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "rope",
+    "deformable",
+    "mooring lines",
+    "boat",
+    "marina",
+    "spring line",
+    "prediction",
+    "timing",
+    "sequencing"
+  ],
+  "instruction": "This boat is berthed tight between two others; its engine runs ahead for 10 s, starting in 30 s. Before then, lay three dock lines on the deck and keep one on its post, so the engine swings the stern out clear of the other boats. Then bring the last line aboard and let go.",
+  "context": "Leaving a tight berth by springing off: \"By using a bow spring the stern can be swung out, allowing you to reverse out into clear water.\" (Practical Boat Owner). NauticEd: \"place a spring line on a forward dockside cleat and run it aft to the dock\", \"apply forward thrust\", \"The aft of the boat will turn out.\" O*NET 53-5011.00 Sailors and Marine Oilers: \"Handle lines to moor vessels to wharfs, to tie up vessels to other vessels, or to rig towing lines.\"",
+  "setup": "Station table, cm from the midpoint between the arm bases (x forward, y left), heights above the table. Grey dock 8 x 106 x 4 cm at x 18-26. Black posts 2 cm round, 3.5 cm tall on it at x 22, y +48, +5, -5, -48; black lamp box 2.6 x 2.4 x 2 cm at x 19.5, y 0 (amber, then green lamp rises). Orange boat 10 x 46 x 2.5 cm, 200 g, floating, deck flush with the dock, x 27-37, y -23..+23 (bow +y), white toe rail on its outboard edge, on black fenders 1 x 4 cm at y +-17. Grey boats 10 x 18 cm at x 28-38: ahead y +35..+53, astern y -31..-49. Four dark-blue 6 mm lines from deck cleats: bow line (28.5, +21.5) to post +48, bow spring (29, +19) to post +5, stern spring (29, -19) to post -5, stern line (28.5, -21.5) to post -48, lying slack on the dock; each ends in a red 44 x 44 mm square eye (6 mm bars, 32 mm hole, 4.5 cm grip bail) over its post.",
+  "scoring": "Judged from a top video. Score 0 if: the boat touches either grey boat; a gripper holds or pushes the hull (over 0.3 s within 2 cm) or turns it over 8 deg before the engine runs; an eye leaves its post without a gripper on its bail; a gripper is within 4 cm of the boat, a line or an eye while the engine runs or at the end; at engine start any eye but the bow spring's is off the deck, or the bow spring's is off its post; at neutral the stern corner is under 8 cm off the dock face or the boat turned under 15 deg. Otherwise 0.5; 1.0 if all four eyes then lie on the deck.",
+  "run_limit": "1,200 steps (60 s at 20 Hz)",
+  "reset_notes": "Stop the engine timer. Push the boat back on its fenders, square to the dock. Drop each eye back over its post, flat, and lay each line slack on the dock, bowed towards the robot, from its cleat to its post. Nothing is randomised; the engine runs ahead at 30 s for 10 s on every trial.",
+  "fidelity": "Toy scale. The boat is a rigid hull free in x, y and yaw with water drag (3 N s/m, 0.4 N m s/rad); real: a hull in a water tray. The engine is a scripted 0.3 N push at the stern, turned 20 deg outboard (helm to the dock), from 30 to 40 s. Lines are 6 mm cords of 1.4 cm rigid segments with bending springs (no stretch or twist); eyes are rigid printed rings. Contact and release are judged from distances.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-EBM8FH"
+}
