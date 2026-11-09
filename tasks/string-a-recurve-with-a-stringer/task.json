@@ -1,0 +1,25 @@
+{
+  "title": "String a model recurve bow with its bow stringer, then let go",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "string",
+    "cord",
+    "deformable",
+    "archery",
+    "recurve bow",
+    "bow stringer",
+    "spring load",
+    "simultaneous hold",
+    "sequencing"
+  ],
+  "instruction": "String the bow with its bow stringer, then let go.",
+  "context": "Archers string a recurve bow with a bow stringer, a cord that bends the limbs from its handle: \"a bow-stringer provides the safest and only method bow manufacturers recommend\" and \"The bow-stringer supports the bow's draw weight as you slide the top string loop into the limb tip's string grooves\" (Archery360). O*NET 39-3091.00 Amusement and Recreation Attendants: \"Maintain inventories of equipment, storing and retrieving items and assembling and disassembling equipment as necessary.\"",
+  "setup": "Station table, cm from the midpoint between the arm bases (x forward, y left), heights above the table. Wooden riser 3 x 9.2 x 2.5 cm fixed at x 32.5-35.5, y -4.6..+4.6. Two black limbs 0.6 x 15 x 2.5 cm (20 g), 0.5 cm above the table, pinned at x 32.8, y +-5 and sprung straight along y, tips at y +-20. Black nock lip 0.6 x 0.4 x 1.5 cm on each limb's far face 13.3 cm out. Red rigid eyes 1 x 0.6 x 2.4 cm on the far face: bottom eye fixed at y -18.8, top eye sliding on the left limb at y +17, 1.8 cm short of its nock. White 4 mm string, 35.4 cm, eye to eye. Stringer: two blue 6 mm cords, 19.4 cm, from pockets on the limb tips' near side to a yellow handle 5 x 1.6 x 3.5 cm (20 g) at x 26.5, y 0.",
+  "scoring": "Score 0 if: a gripper or arm link touches either limb, a nock lip or the bottom eye at any time; the top eye moves more than 3 mm up its limb while the stringer handle is less than 8 cm behind its start; at the end the top eye is not in the nock (less than 1.5 mm short of it and down behind the lip), either limb is bent less than 15 deg, or a gripper is within 4 cm of the top eye. Otherwise 0.5: eye seated and let go, but a gripper within 5 cm of the stringer handle; 1.0 if none is.",
+  "run_limit": "900 steps (45 s at 20 Hz)",
+  "reset_notes": "Ease the limbs straight with the stringer, slide the top eye back down the left limb to 17 cm from the middle so the string lies straight, and lay the handle back on the table at x 26.5, y 0 with both stringer cords straight. Nothing is randomised.",
+  "fidelity": "Toy 40 cm bow (the real rebuild is a printed one, not a real bow): rigid limbs pinned at the riser on weak torsion springs (0.15 N m/rad), not bending fibreglass; the top eye rides a slide on the limb edge (lifts 12 mm), not a loose loop. String and stringer: 2 cm rigid segments, bending springs, no stretch; ties 1,200 / 300 N/m. Forcing the eye up an unbent limb overloads the sim string (NaN a second later); the score latches 0 at 3 mm, first.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-WDC5SY"
+}
