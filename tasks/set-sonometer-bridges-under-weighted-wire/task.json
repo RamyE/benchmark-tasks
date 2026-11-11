@@ -1,0 +1,23 @@
+{
+  "title": "Stand two sonometer bridges under a weight-tensioned cord at the marks",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "cable",
+    "cord",
+    "tension",
+    "hold up and place",
+    "physics lab",
+    "sonometer",
+    "deformable"
+  ],
+  "instruction": "Set up the sonometer: stand the two black bridges on the box under the orange cord, one at each blue mark, so the cord rests in the notches of both bridges and the weight still hangs free. Then let go.",
+  "context": "Setting up a sonometer for a physics practical. A college lab manual (The Sonometer lab, sites.gsu.edu): \"The length of the vibrating wire may be varied by the use of two metal bridges, inserted under the wire at any desired point, to set up nodes at these bridge points.\" O*NET 25-9042.00 Teaching Assistants: \"Prepare lesson materials, bulletin board displays, exhibits, equipment, and demonstrations.\" The weighted cord drops flat when let go.",
+  "setup": "Positions in cm from the midpoint between the two arm bases (x forward, y left), heights above the table. White box (sonometer body) 6 x 66 x 8.5 cm, x 27-33, y -34..+32, top at 8.5, with a dark 0.6 cm board 12.5 cm tall and 66 cm long standing 1.4 cm behind it (x 34.4-35.0). Orange 8 mm soft cord (73 cm) knotted to a steel peg at y +31.7 on the box top, lying along x 30 on the top, over a 2 cm polished steel rod across the right end (centre y -35, top flush with the box top), down to a 40 g blue weight (2 x 2 x 1.2 cm) hanging about 1 cm above the table. Two painted blue lines across the top at y +8 and y -8. Two free black bridges, each 7 (x) x 1 (y) x 3.8 cm, 15 g, with a 14 mm wide, 3 mm deep notch across the middle of the top, standing upright on the table at x 20, y +12 and y -12, long side along x. Box top friction 0.3.",
+  "scoring": "Measured at the end of the run, with everything still. Score 0 if: a gripper is within 4 cm of the cord or a bridge; a bridge or the weight still moves; neither bridge counts. A bridge counts when it stands on the box top (tilt < 10 deg), its centre within 1 cm of a blue mark (y) and 6 mm of the cord line x 30, with the cord centre inside its notch. 0.5: one bridge counts (one mark each). 1.0: both count, 16 +- 1.5 cm apart, the cord's underside at least 3 cm above the box top all the way between them, and the weight hangs free (3 mm clear of table, box and rod).",
+  "run_limit": "1,400 steps (70 s at 20 Hz)",
+  "reset_notes": "Lift both bridges off and stand them back on the table at x 20, y +-12. The cord lies straight on the box top under the hanging weight by itself; check it runs over the rod and the weight hangs still.",
+  "fidelity": "Cord: 2 cm rigid segments with bending springs, no twist or stretch. Peg knot and weight hook are ball joints; the weight's swing is damped. The rod is a fixed smooth cylinder (friction 0.05) standing in for the sonometer pulley. Bridges are box bodies with welded cheeks forming the notch, not knife-edged wedges. Not checked against a real trial.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-2BC7UE"
+}
