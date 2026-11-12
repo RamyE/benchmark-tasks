@@ -1,0 +1,24 @@
+{
+  "title": "Tension a cable on its spring gauge and lock it in a toggle clamp",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "cable",
+    "deformable",
+    "tensioning",
+    "toggle clamp",
+    "over-centre latch",
+    "fixture",
+    "cable assembly",
+    "simultaneous hold"
+  ],
+  "instruction": "Lock the black cable in the red toggle clamp with the tension gauge's yellow carriage held in the green band, the cable straight along the fixture line, then let go of everything.",
+  "context": "On harness and cable boards, wire ends are fixed \"so that the wires may be pulled taught as they're placed on the peg board\" (US 10,411,444); springs on the board anchor conductor ends (Navy OP 2230), and hold-down toggle clamps grip work in their \"locked position\" (Te-Co catalogue). Electrical assemblers (O*NET 51-2022.00) \"Position, align, or adjust workpieces or electrical parts to facilitate wiring or assembly.\" Here the cable must stay at its set tension once both hands are off.",
+  "setup": "cm; origin on the table midway between the arm bases, x away from the robot, y left. Fixture line: x 28 along y. Tension gauge: two grey rails 0.6x13x0.6 at x 25.6 and 30.4, y 17-30, end block 5.4x1x2.4 at y 30.5; yellow carriage 3x2.4x1.6 (40 g) at x 28, y 24.5 (zero), on a slide 0.5 above the table, pulled to +y by a 25 N/m spring (1.0 N at zero, 6 cm travel); green band 1.2 wide at x 31 for the carriage front face at y 18.8-20.8 (draw 2.5-4.5), black zero tick at y 23.3. Cable: black 6 mm PVC, 46 long, hooked on a swivel at the carriage front (y 22.7); orange plug 3x1.4x1.2 (12 g) on its far end. Start lay: a loop up to x 31.6 between y 21 and 9, on the line through the clamp to y 0, then curving towards the robot; plug near x 14, y -16.5. Toggle clamp at y 6: grey base 3x3.4x1.2 at x 22.8; red bar 10x1.2x0.8 (40 g) hinged about y at x 23, 1.8 up, standing upright; black rubber pad 2.2x3x0.8 under it 5 from the hinge (over the line when shut); spring strut on a grey side plate at y 9.4.",
+  "scoring": "At the end, from above with a ruler. Score 0 if: a gripper is within 3 cm of the cable, plug, clamp bar/pad or carriage; the bar is more than 3 deg above flat; the cable is not under the pad with the pad on it; any cable point from the gauge to 8 cm past the clamp is more than 12 mm off the line; the carriage is drawn less than 1 cm; the cable was pulled more than 1 cm through the clamp after it shut (tape flag). Else 1.0 if the draw is 2.5-4.5 cm and the gauge-to-clamp span is within 6 mm of the line; 0.5 if the clamp is shut and held but the draw is 1-2.5 cm or more than 4.5 cm, or the span is more than 6 mm off the line.",
+  "run_limit": "2,400 steps (2 minutes at 20 Hz)",
+  "reset_notes": "Lift the clamp bar upright past its snap point. The gauge carriage returns to zero by itself. Lay the cable by hand in the start shape (tape outline of the loop and the plug) and leave the plug flat at its tape mark.",
+  "fidelity": "Cable: 2 cm rigid segments with bending springs, inextensible, no twist or plasticity, friction 0.8. The toggle linkage is a compression-spring strut over centre (its spring is not drawn; the dark stubs are its pins): the bar stands open, snaps shut past 6 deg and presses the rigid pad on the cable with about 6 N; the cable is held by friction only. Tension is read from the spring gauge (no cable stretch); the carriage slide is frictionless.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-DCNRSU"
+}
