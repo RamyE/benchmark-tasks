@@ -1,0 +1,24 @@
+{
+  "title": "Turn a camera turntable without wrapping its cable",
+  "category": "Other",
+  "keywords": [
+    "bimanual",
+    "cable",
+    "deformable",
+    "articulated object",
+    "winding",
+    "operating cabled equipment",
+    "cable routing",
+    "rotary stage",
+    "sequencing"
+  ],
+  "instruction": "Turn the camera turntable half a turn so its red arrow points at the green mark, then let go. Its cable must not end up wound round the turntable or wrapped round the grey post.",
+  "context": "Operating cabled equipment: cameras, sensors and test fixtures on rotary stages are fed by a cable, and every turn of the stage moves that cable. Turned the wrong way, the cable winds round the stage; turned the right way, it can still snag on fixed parts nearby. Here a robot must turn a cabled stage the way that unwinds it and route the cable past an obstacle first; moving the cable drags the free-turning stage, so one hand steadies it while the other moves the cable.",
+  "setup": "Positions in cm from the midpoint between the arm bases on the table (x away from the robot, y left). Turntable: light grey disc 120 mm dia, 20 mm thick, 100 g (printed PLA), turning on a fixed 6 mm vertical steel pin at x 30, y -7 and resting on the table (drag about 0.03 N m); red arrow on top points +x. Knob: dark grey cylinder 20 mm dia, 25 mm tall, 10 g, on its own pin on the disc at x 30, y -11. Green tape 14 x 24 mm at x 22.8, y -7. Cable: black, soft 6 mm round, 56 cm, 30 g, EI about 2e-4 N m^2, leaves a swivel strain relief (vertical pin, -200..+20 deg) on the rim at x 36.35, y -7, runs along +y through a fixed closed clip (jaw 18 wide x 16 high x 20 mm long) at x 36.35, y 18, loose to y 49. Post: 25 mm dia, 45 mm tall, fixed at x 33.3, y 7. README lists materials.",
+  "scoring": "3D cable centre line, connector to clip. Score 0 if: physics NaN; a gripper (TCP) within 3 cm of cable, disc or knob at the end, or gripper unreadable; the cable does not pass through the clip's jaw (inside its 18 x 16 x 20 mm tunnel, height included, end to end); it winds >= half a turn about the turntable axle; or it winds >= half a turn about the post axis (summed angle of consecutive points). Else 1.0 if the arrow is within 10 deg of the mark; 0.5 if it is 10-30 deg off (released, cable through the clip, unwound, clear of the post); 0 beyond 30 deg.",
+  "run_limit": "2,400 steps (2 minutes at 20 Hz)",
+  "reset_notes": "Turn the disc back so the arrow points +x and the knob is on the right; lay the cable straight from the strain relief along +y through the clip, 25 cm of it on the turntable side of the clip (tape mark on the cable at the clip), the rest straight beyond. Check the post and clip are on their marks. Nothing is randomised.",
+  "fidelity": "Cable: 2 cm rigid segments with bending springs at half the kit's default stiffness, no twist; it leaves the rim through a swivel pin (-200..+20 deg; real: flexible strain relief) and passes through the fixed clip by contact. Axle: a joint free in yaw and +/-3 mm height; bearing drag is the 100 g disc's friction on the table plus light damping. Knob on its own pin so a pinch does not lock the disc. Disc, post, clip rigid; no camera body on the turntable (the red arrow marks its heading).",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-DZWH37"
+}
