@@ -1,0 +1,23 @@
+{
+  "title": "Keep a condensate drain hose sloping downhill",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "cable",
+    "hose",
+    "deformable",
+    "routing",
+    "HVAC",
+    "plumbing",
+    "constraint keeping"
+  ],
+  "instruction": "Route the air conditioner's white condensate hose into the drain tundish so that it slopes downhill all the way from the unit to the drain, with no dip that would trap water: lay it over the two grey steps and put the nozzle inside the tundish. Then let go of the hose.",
+  "context": "Condensate piping must keep \"a minimum horizontal slope in the direction of discharge of not less than one-eighth unit vertical in 12 units horizontal (1% slope)\" (International Mechanical Code sec. 307.2.1, Baltimore City 2024 building code); a sag holds water. O*NET 49-9021.00 HVAC mechanics: \"Install auxiliary components to heating or cooling equipment, such as expansion or discharge valves, air ducts, pipes, blowers, dampers, flues, or stokers\".",
+  "setup": "Cm from the midpoint between the arm bases on the table (x forward, y to robot's left). White unit box 12x10x20 cm, x 8-20, y 34.6-44.6. Off-white PVC hose, 8 mm outside / 5 mm bore, 56 cm, fixed in an outlet on the unit's right face at x 14, y 34, 14 cm high; it hangs to the table and lies straight to y -18, ending in a grey 30x14x14 mm nozzle (12 g). Two grey wooden steps (supports): high 4 cm (along path) x 6 cm, 12 cm tall, centre (23.7, 23.3), turned -48 deg (pointing from the outlet to the low support); low 6x6 cm, 9.5 cm tall, centre (32, 14), turned -80 deg. Drain: grey 11x11x1.5 cm plinth at (22, -10) with a dark open tundish on it (inner 6.5x6.5 cm, 8 mm walls, 2 cm tall; rim 3.5 cm above the table). All fixed (taped).",
+  "scoring": "Score 0 if: a gripper is within 3.5 cm of the hose or nozzle at the end (or unreadable); the nozzle centre is not inside the tundish (6.5 cm opening, below the rim); the hose does not rest on both steps (supports) (part of it over each top, underside at most 1.1 cm above); unit, supports or drain moved. Else read the hose centre height at the outlet, every 2 cm and the hose end (side photo with ruler, to 1 mm). Pocket = largest height of any point above any point before it. 1.0 if pocket <= 1.5 mm (under a third of the 5 mm bore: cannot seal) AND every stretch of >= 10 cm run, and the whole run, falls >= 1/8 in per ft (1.04%). 0.5 if not, but pocket <= 3 mm. Else 0. Success (1.0) held 1 s.",
+  "run_limit": "1,200 steps (1 minute at 20 Hz)",
+  "reset_notes": "Lay the hose straight from the outlet towards the robot's right along x 14 cm (it hangs from the outlet to the table), nozzle flat on the table at y -19 cm. Check unit, supports and drain are on their tape marks; tundish empty.",
+  "fidelity": "Hose: 2 cm rigid capsule segments with soft bending springs, no twist, octagonal colliders; outlet end welded to the unit. Nozzle is a rigid box welded to the hose end. Supports, unit and drain are fixed rigid boxes. No water is simulated: the trap is judged only from the hose's height profile.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-ASNNLU"
+}
