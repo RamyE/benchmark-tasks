@@ -1,0 +1,28 @@
+{
+  "title": "Rod a blocked duct, find where the blockage is, mark the spot on the duct and withdraw the rod",
+  "category": "Other",
+  "keywords": [
+    "bimanual",
+    "cable",
+    "duct rod",
+    "rodding",
+    "building maintenance",
+    "utilities",
+    "conduit",
+    "blockage",
+    "measurement",
+    "hidden state",
+    "interactive perception",
+    "tool use",
+    "pushing a flexible rod"
+  ],
+  "instruction": "This duct is blocked somewhere along its length. Use the yellow rod to find where, put the orange marker on top of the duct right over the blockage, and pull the rod back out. Then let go.",
+  "context": "Rodding a duct before cable or rope is pulled through it: where the rod stops is the blockage, and the length paid in says where along the run to open it. Ability tested: feeding a flexible rod blind, in short regrasped strokes, until it stops, reading the inserted length, and carrying it to a mark outside the duct. The blockage sits somewhere new each trial.",
+  "setup": "Station table; cm from the midpoint between the arm bases (x forward, y left). Duct: grey square PVC, 2.6 cm outside, 2 cm bore, along y at x 49, open mouth at y +34, capped at y -48, fixed; opaque grey lid 5 cm wide, top 2.6 cm up, white 12x4 mm ticks at its edges every 10 cm from the mouth (y +24 ... -46). Hidden inside: a dark 7 cm wooden block filling the bore, its face D cm from the mouth, D drawn uniformly in 53-75 at every reset (seeded). Rod: yellow 6 mm fibreglass, 90 cm, 40 g, black 2 cm bands every 10 cm from its brass bullet tip; tip 3 cm inside the mouth, straight out to y +45, one 180-degree bend of 13 cm radius away from the robot to x 75, then straight back along -y to about y +9. Marker: orange wooden block 2.5x2.5x1 cm, 10 g, on a grey 1.8x1.8x4 cm post at x 20, y -52.",
+  "scoring": "Measured from this trial's blockage face. Score 0 if: the marker came onto the lid (centre over it, under 2 cm above it) before the rod's tip came within 1.5 cm of the face; the tip never came within 1.5 cm of it; at the end a gripper is within 3 cm of the rod or 4 cm of the marker; or the marker is not resting on the lid. Otherwise, by the marker centre's distance along the duct from the face: up to 2 cm: 1.0 with no part of the rod left in the duct, 0.6 with the rod still in it; 2-4 cm: 0.3; more: 0.",
+  "run_limit": "3,000 steps (2.5 minutes at 20 Hz)",
+  "reset_notes": "Pull the rod out. Draw D uniformly in 53-75 cm (seeded per episode), push the block in until its face is D cm from the mouth, close the lid out of the cameras' view. Lay the rod with its tip 3 cm inside the mouth: straight out, one 13 cm radius bend away from the robot, straight back. Put the marker on its post.",
+  "fidelity": "The 6 mm rod is 2 cm rigid segments with bending springs (no twist, stretch or plasticity); the bullet is a rigid box. Duct, lid and cap are fixed rigid boxes; the blockage is a kinematic block moved only at reset. Rod friction 0.5 is chosen, not measured. Starting bend 13 cm radius, within the rod's rated minimum. The 20 mm bore is narrower than the 25 mm smallest conduit listed for this rod; it keeps the rod from snaking inside.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-V6VSZJ"
+}
