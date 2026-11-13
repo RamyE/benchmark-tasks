@@ -1,0 +1,26 @@
+{
+  "title": "Weave a wire past formboard pins along the drawn path, then plug it in",
+  "category": "Impact on AI timelines",
+  "keywords": [
+    "bimanual",
+    "cable",
+    "wire harness",
+    "formboard",
+    "routing",
+    "slalom",
+    "pin side",
+    "sharp turn",
+    "drawing reading",
+    "insertion",
+    "topological planning"
+  ],
+  "instruction": "Route the orange wire on the harness board along the blue printed line: the wire must pass every steel pin on the same side as the blue line. Then push the wire's plug into the black connector at the end of the line and let go.",
+  "context": "Wire harnesses join the motors and sensors of robots and the cabling of data-center racks; builders lay each wire on a formboard around routing pins as the layout drawing shows (O*NET 51-2022.00: \"Read and interpret schematic drawings, diagrams, blueprints...\"). Ability tested: threading a wire's free end alternately in front of and behind pins, round a sharp turn, then seating its plug, with two arms because neither reaches the whole board.",
+  "setup": "Coordinates in cm from the midpoint between the arm bases (x forward, y left). White 1 mm sheet, x 5-50, y -65..42. Five steel pins (15 mm dia, 40 mm tall) at x 28, y 18/9/0/-9/-18; steel turn post 44 mm dia, 40 mm tall at (31,-28). Blue 6 mm line: start (15,35), behind pin 1, in front of pin 2, behind 3, in front of 4, behind 5, round the post's front and right side, then straight to the mouth (40,-32). Grey start fixture 40x30x25 mm, wire exit (15,35). Orange 7 mm wire, 95 cm, lies straight from the exit to the right (2 deg off the y axis), black 55x16x12 mm plug at about (18,-63). Black connector 6x7x3 cm, cavity 22 mm wide, 15 mm tall, 25 mm deep, mouth at (40,-32) facing the robot.",
+  "scoring": "Pin sides judged from the top view by short gates either side of each pin (and, with the plug at the connector, the winding of wire+line round each pin). 0 if: any pin or the post is on the wrong side; the wire lies over a pin; any wire point is over 25 mm above the board; a gripper is within 3 cm of the wire or plug. Else 0.1 per pin passed on the drawn side, in route order (pins 1-5, post: up to 0.6); with all six: plug centre within 4 cm of the mouth, not in it, 0.7, tip in the cavity 0.8, tip >= 12 mm in 1.0.",
+  "run_limit": "2,400 steps (2 minutes at 20 Hz)",
+  "reset_notes": "Pull the plug out, lift the wire off the pins and lay it straight from the start fixture across the front of the board to the right, plug at about (18,-63). Pins, post, sheet, fixture and connector are fixed to the board and never move.",
+  "fidelity": "Wire: 2 cm rigid segments with bending springs, no twist or plasticity. Pins, post, fixture and connector are rigid. The plug is a plain box held in the cavity by friction (no latch); real connectors would click. The printed line is a flat 0.3 mm strip. Pin sides are judged from the top view, as from a photo.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-96VHUM"
+}
