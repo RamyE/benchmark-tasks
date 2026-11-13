@@ -1,0 +1,23 @@
+{
+  "title": "Find the ECG lead with an intermittent break by flex-testing the leads",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "cable",
+    "ECG lead wire",
+    "medical equipment",
+    "fault finding",
+    "interactive perception",
+    "intermittent fault",
+    "test lamp"
+  ],
+  "instruction": "Three ECG lead wires are connected to this training lead tester, and one of them has an intermittent break. Find the faulty lead and put it in the red reject tray.",
+  "context": "Medical assistants (O*NET 31-9092.00, 833,900 US workers): \"Operate x-ray, electrocardiogram (EKG), or other equipment to administer routine diagnostic tests.\" Ability tested: interactive perception, bending a cable at its strain relief to make an intermittent break show, then acting on it. A bent-only lead break is invisible on a still lead; flex leads, read the tester lamps, reject the lead they point to.",
+  "setup": "Reference: table top z=0; x forward from the line through the arm bases, y left of their midline (cm). Tester: grey block 24x6x3 cm at x 21-45, y 19.6-25.6, fixed. Seats: rail pairs 30x4x3 mm, 23 mm apart, centred x 27/33/39, y 18; a 1.5 mm pin in the tester face enters the connector. Lamps: 26 mm green LED discs on the tester top, 3 V via 100 ohm, lit while seat pin, lead and snap conduct to the brass return bar. Leads a/b/c (x 27/33/39): grey 5 mm cord 28 cm, connector 30x20x15 mm, snap 20x15x10 mm on a brass bar 20x11 cm at x 23-43, y -17 to -6; identical sleeve 5-7 cm from each connector. One lead, drawn per reset from the seed, has a cut conductor rejoined by a spring pin that opens past ~30 deg bend. Red tray 22x28 cm inside, 1.5 cm walls, x 31-53, y -46 to -18.",
+  "scoring": "Score 0 if: a good lead's lamp ever goes dark (connector >4 mm off, >5 mm up or >12 deg turned; removing a good lead does this); a connector leaves its seat (>1 cm) with no gripper within 2.5 cm (pulled by the cord); or a gripper is within 3.5 cm of a lead at the end. Evidence = faulty lead flexed >30 deg while seated (lamp went dark), or both good leads were. Else: evidence complete before the faulty connector left its seat and lead entirely in the tray 1.0; same but only out of the tester 0.5; evidence complete, faulty lead never taken out 0.25; otherwise 0 (a guess scores 0).",
+  "run_limit": "2,400 steps (2 minutes at 20 Hz)",
+  "reset_notes": "Draw the faulty seat from the trial seed (numpy default_rng(seed).integers(3) -> a/b/c); put the faulty lead (dot inside its snap, unseen by cameras) there and the good leads in the other seats. Push each connector against the tester face, lay cords straight, clip snaps on the bar, check all lamps lit, and check the faulty lead in a bend jig: lit at 15 deg, dark at 35 deg.",
+  "fidelity": "Cords: 2 cm rigid segments with bending springs (no twist, stretch, plasticity). Connectors held in seats by rails and friction (no latch or pin). The break is scripted: the faulty lead's lamp is dark while its cord 6 cm from the connector bends past 30 deg with the connector seated; any lamp is dark if its connector leaves its seat. Lamp: visual disc switched in software. Snaps lie on the bar (real: clipped).",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-ZTZGDA"
+}
