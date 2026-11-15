@@ -1,0 +1,24 @@
+{
+  "title": "Pull a cable from under stacked cases without dragging or tipping them",
+  "category": "Societal relevance",
+  "keywords": [
+    "bimanual",
+    "cable",
+    "deformable",
+    "household",
+    "everyday chore",
+    "extraction",
+    "constraint keeping",
+    "simultaneous hold",
+    "load stability"
+  ],
+  "instruction": "Pull the orange cord out from under the stacked cases without sliding or tipping them, and put its plug in the grey bin. Let go of everything at the end.",
+  "context": "A familiar household moment: a power or extension cord ends up pinned under a stack of boxes or cases on the floor, and you want it back. Most people have tugged such a cord and felt the whole stack slide or start to topple; the usual fix is to tip the bottom box up by its handle with one hand and slide the cord out with the other. Here a cord is pinned under two stacked cases: pulled alone, it drags the stack. Cord freed and stowed, cases undisturbed.",
+  "setup": "Positions in cm; origin on the table midway between the arm bases, x away from the robot, y to its left. Base case: black hard case 14 (x) x 16 (y) x 8 high, 600 g, front face x 20, back x 34, y 5 to 21; dark grey bar handle 1.2 x 9 x 1.5 on two standoffs 4 cm off the middle of its front face. Top case: grey hard case 10 x 13 x 9 high, 300 g, on the base case, centred at x 28, y 13 (1 cm behind the base case's centre). Orange 6 mm round PVC cord, 42 cm, 20 g, straight along y at x 23.5 from its bare tail at y +24 to y -18, then a black 35 x 16 x 12 mm plug (15 g) to y -21.5; the stack rests on the cord and its own back edge (tilted back 3.3 deg, front edge about 8 mm up). Grey open bin, 10 x 10 inside, 0.5 walls 4 high, centred x 24, y -41. Bare MDF table.",
+  "scoring": "Score 0 if: at any moment a bottom corner of either case is more than 3 cm (top view) from its taped starting mark, or either case tilts more than 10 deg; or at the end a gripper is within 3 cm of the cord, plug, a case or the handle. Otherwise: 1.0 if no part of the cord or plug lies inside the base case's footprint (top view) and the plug's centre is inside the bin below its rim; 0.5 if the cord is out from under the case but the plug is not in the bin; 0 if any of the cord is still under the case (e.g. untouched). Success when 1.0 holds for 1 s.",
+  "run_limit": "1,200 steps (1 minute at 20 Hz)",
+  "reset_notes": "Lay the cord straight on its tape line (tail at its mark, plug flat at the right), set the base case with its corners on their tape marks so it rests on the cord, centre the top case on it (corners on marks drawn on the base case), empty the bin.",
+  "fidelity": "Cord: 2 cm rigid segments with bending springs, no twist; friction case-cord 0.9, case-table 0.75, so pulled alone the cord drags the stack about 23 cm (real ABS on PVC/MDF is less grippy, ~0.3-0.6, so drag distance won't transfer exactly). Cases are rigid boxes (real: ABS hard cases weighted to 600 g and 300 g, plastic bar handle screwed on; bin is a plastic tray). A small tabletop stack, not boxes on a floor. Tilt is read from the case pose; in a real trial, use a phone inclinometer or video.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-JRJHTD"
+}
