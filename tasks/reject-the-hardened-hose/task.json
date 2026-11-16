@@ -1,0 +1,24 @@
+{
+  "title": "Find the hardened hydraulic hose by flexing each one, and lay it in the reject tray",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "hose",
+    "deformable",
+    "hydraulics",
+    "inspection",
+    "interactive perception",
+    "stiffness",
+    "flex test",
+    "reject"
+  ],
+  "instruction": "One of these hydraulic hoses has hardened and must be taken out of service. Put it in the red tray and leave the good ones on the bench, then let go.",
+  "context": "Industrial machinery mechanics (O*NET 49-9041.00) \"Examine parts for defects, such as breakage or excessive wear.\" FAA AC 43.13-1B: \"A complete inspection includes considering the age, cure date, stiffness of the hose\". A hose that \"becomes hard and brittle\" is a failure sign; where heat is the cause the fix includes \"replace the hose assembly\" (Power Motion Tech). Hardening does not show at rest: the robot must flex each hose and judge from its response which one is stiff.",
+  "setup": "Station table; cm from the midpoint between the arm bases (x forward, y left). Three black 10 mm OD rubber hydraulic hoses, 60 cm between fittings, 45 g, lie straight along y (y -30 to +30) on tape lines at x 28, 35 and 42, each with a brass fitting 3 x 1.4 x 1.4 cm (8 g) on both ends (centres y -31.5 and +31.5). The hoses look alike; one of them, drawn at random per trial (any of the three lines), has hardened: 5 times the bending stiffness of the others. Real hoses: three lengths cut from one roll; the hardened one heat-aged until it passes the README's acceptance checks (with 6 cm of hose plus its fitting over the bench edge, a good hose's fitting drops at least 5 cm, the hardened one's at most 3.5 cm; in the push flex test it stays off the table at least 12 cm and shoves its far fitting at least 7 cm, a good hose touches down within 10 cm and its far fitting moves under 5 cm). Red reject tray, fixed: inside 10 x 70 cm (x 11.5-21.5, y -35 to +35), 4 mm walls 2 cm tall, 2 mm floor.",
+  "scoring": "Flexed: a gripper centre within 3 cm of one of the hose's fittings, that fitting at least 6 cm above the table and at least 10 cm in from its rest place towards the hose's other end, while two parts of the hose point at least 30 deg apart; tested: flexed, then let go (no gripper centre within 3.5 cm of it); identified: the hardened hose tested, or both good hoses tested (elimination). Score 0 if: at the end any point of a good hose is over the tray's inner outline below 6 cm; when the hardened hose first comes over the tray's inner outline below 6 cm it is not yet identified; a hose goes off the table; or a gripper centre is within 3.5 cm of any hose at the end. Otherwise: the whole hardened hose inside the tray (centreline at least its 5 mm radius inside the inner outline, both fittings' whole footprints inside, all below 3 cm): 1.0; both whole fittings inside and below 3 cm but some hose outside: 0.5; else 0.",
+  "run_limit": "1,200 steps (1 minute at 20 Hz)",
+  "reset_notes": "Draw the hardened hose's line from the trial seed: [\"a\",\"b\",\"c\"][numpy.random.default_rng([seed, 4057]).integers(3)] (a x 28, b x 35, c x 42). Lay the hardened hose (marked under one fitting) straight on that line and the good hoses on the others, fittings at y -31.5 and +31.5. Tray at its marks, empty. Re-run the README's stiffness and flex-test checks before each session.",
+  "fidelity": "Hoses: 30 rigid 2 cm segments with bending springs (no twist, stretch or plasticity); hardening is modelled only as 5 times the bending stiffness (a real one also cracks when flexed). Hoses weigh 75 g/m, lighter than most real 10 mm hose, so the sim stays stable; the real set is specified by its acceptance checks. Fittings are rigid blocks (real: crimped). Flexing and release are judged geometrically from hose and gripper positions.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-633FN4"
+}
