@@ -1,0 +1,26 @@
+{
+  "title": "Lift a slab cake out of its deep tin by both ends of its parchment sling and set it on the rack",
+  "category": "Societal relatability",
+  "keywords": [
+    "bimanual",
+    "deformable",
+    "flat strip",
+    "parchment sling",
+    "basket lift",
+    "baking",
+    "kitchen",
+    "simultaneous hold",
+    "extraction",
+    "placement",
+    "home baking"
+  ],
+  "instruction": "A brown cake slab sits in the deep grey tin on a white parchment sling whose two ends stand up out of the tin. Lift the cake out by the sling, set it flat on the wire rack and let go.",
+  "context": "Home bakers line a brownie or cake tin with a parchment sling and lift the bake out by its overhanging ends (King Arthur Baking: \"The overhanging edges serve as handy little tabs to easily and cleanly lift delicate baked goods out of the pan.\"). Anyone who has done it knows the catch: pull one end and the paper just slides out; both ends must rise together and stay level, or the cake stays in the tin or spills.",
+  "setup": "Station table, cm from the midpoint between the arm bases (x forward, y left), heights above the table. Dark-grey metal tin at (32, 0): inner 12.8 x 16.3 (x by y), 5 deep (floor top 0.3, rim 5.3), walls 0.4, non-stick. In it a brown cake slab 11.6 x 14.0 x 4.0, 400 g, centred, on a white silicone parchment strip 9 wide, 0.2 thick in sim (real parchment 0.05), 34 long: flat under the cake along y, up the +y and -y inner walls (1.15 gap between cake and wall) and standing 4 above the rim on both sides. Pale wire cooling rack 14 x 18, 2 tall (8 wires along y), centred (16, 0).",
+  "scoring": "Score 0 if at any time: a robot part touches the cake; the cake falls faster than 0.35 m/s (dropped); it tilts more than 35 deg (spilled). Also 0 unless at the end both grippers are 4 cm or more from the cake and every part of the sling's full width, and the cake is still and wholly out of the tin (every corner above the rim or outside the tin). Then: 1.0 if it rests on the rack, centre within 3 cm of the rack centre, tilt under 5 deg; 0.6 if it rests upright (tilt under 10 deg) anywhere else; 0.3 if it rests tilted 10-35 deg.",
+  "run_limit": "600 steps (30 s at 20 Hz)",
+  "reset_notes": "Lay the strip flat across the tin floor along y, centred, up both side walls; set the cake on it, centred; stand both ends straight up out of the gaps. Rack at its marks. Nothing is randomised.",
+  "fidelity": "Sling: 1 cm rigid pieces hinged across the strip with weak straightening springs, 2 mm thick, not real parchment's ~0.05 mm: fingers pinch it across its thickness and the cake presses it on the floor, and the PhysX box contacts (2 mm contact offset) need mm-thick pieces for that. Real rebuild: ordinary parchment, ends creased upright. Cake: rigid 400 g foam block. Friction: tin 0.05, cake on parchment 0.15. Robot contact by PhysX query (real: video).",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-49CBCS"
+}
