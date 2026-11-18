@@ -1,0 +1,24 @@
+{
+  "title": "Restock two milk lanes in a dairy case, oldest code date in front",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "stock rotation",
+    "FIFO",
+    "dairy case",
+    "grocery",
+    "shelf lanes",
+    "code date",
+    "constrained order",
+    "restocking"
+  ],
+  "instruction": "Put the two new cartons of milk on the shelf.",
+  "context": "Stockers (O*NET 53-7065.00) 'Stock shelves, racks, cases, bins, and tables with new or transferred merchandise'; dairy goes first in, first out: 'Grocery store refrigerated units place milk with the oldest expiration date in the front of the display' (Illinois State Board of Education). Each lane fits two cartons and its back slot is walled in by stock, so the old one is drawn out over the lip, the new one set in the back of an 18 cm lane 1.45 cm wider than it, and the old one set back in front.",
+  "setup": "Origin: table top below the arm-base midpoint; x forward, y left (cm). Dairy-case shelf deck (0.5 cm) x 20.5-53, y -29.3 to +29.3: front price-channel lip x 20.5-21.5, 2.5 cm tall; rear lip x 39.5-40.5, 5 cm tall; case back wall x 52-53 (behind the air-return gap), 30 cm tall; no end panels (one section of a case lineup). Wire lane dividers 3 mm, 4 cm tall at y -28.45, -20.15, -11.5, -4, +4, +11.5, +20.15, +28.45: seven lanes 18 cm deep (x 21.5-39.5), inside widths 8.35 (2%), 7.2 (skim), 7.7 (chocolate), 8 (whole) cm. Pint cartons 6.9 x 6.9 x 12.5 cm, 500 g. 2% lanes y +/-15.8: one old 2% carton (code date NOV 18) at the front, x 21.7-28.6; back slot empty. Middle lane (chocolate) and lanes y +/-7.75 (skim): two cartons each, front (x 21.7-28.6) and back (x 32.1-39.0); lanes y +/-24.3 (whole): one carton each, at the back. Stocking cart deck (grey, 2 cm tall) x 6-20, y -30 to +30: two new 2% cartons (NOV 27) at x 15, y +8 and -8.",
+  "scoring": "Lane correct: one old and one new 2% carton standing in the lane (base on the deck between its dividers, tilt at most 10 deg), the old carton's centre nearer the lip than the new one's, the old carton's front face within 3 cm of the lip. Any other lane state (wrong order, a carton missing, old carton set back more than 3 cm) is not correct. Score 0 if at the end: a carton is lying or tipped, or stands anywhere but the shelf deck or the cart; a chocolate, skim or whole carton moved over 1 cm or tipped; a gripper is within 3 cm of any carton. Otherwise 0.5 per correct lane (1.0 for both). Real trial: overhead photo and ruler.",
+  "run_limit": "2,400 steps (120 seconds at 20 Hz)",
+  "reset_notes": "Stand an old (NOV 18) 2% carton at the front of each 2% lane (y +/-15.8), 2 mm behind the lip, centred between dividers; back slots empty. Two chocolate cartons in the middle lane, two skim cartons in each lane at y +/-7.75, front and back, and one whole-milk carton at the back of each lane at y +/-24.3 (back face 5 mm before the rear lip). Two new (NOV 27) cartons on the cart deck at x 15, y +8 and -8, code dates facing the robot. Shelf, dividers and cart deck are fixed.",
+  "fidelity": "Cartons: rigid 6.9 x 6.9 x 12.5 cm boxes (gable modelled flat) with mass and friction; the 2% ones get rotational damping so they don't pivot between the pads. No liquid (real: weighted dummies). The code date is its day (18 or 27) in black on the carton top. Shelf parts rigid, fixed. No refrigeration. The deck is a top shelf; its canopy (40+ cm up) is left out so the top camera can see in.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-HEG8H9"
+}
