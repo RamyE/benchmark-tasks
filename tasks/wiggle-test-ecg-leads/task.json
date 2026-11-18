@@ -1,0 +1,23 @@
+{
+  "title": "Flex-test cable assemblies on a continuity tester and reject the one with an intermittent break",
+  "category": "Other",
+  "keywords": [
+    "bimanual",
+    "cable",
+    "cable assembly",
+    "continuity test",
+    "quality inspection",
+    "fault finding",
+    "interactive perception",
+    "intermittent open"
+  ],
+  "instruction": "One of these three cable assemblies on the continuity tester has an intermittent break. Find it and put it in the red reject tray.",
+  "context": "Other: catching intermittent opens before equipment ships. They pass a still continuity test and return as 'no fault found' failures: NAVAIR (SAE 2012-01-2241) puts wiring faults causing NFF or intermittent diagnosis at over $2B/yr for the DoD, 26% of the wiring faults it found showing only under vibration; airlines reported NFF at $100,000 per aircraft per year (ATA 1997, in Khan et al. 2014). Ability: flex leads, read lamps, reject the one that opens.",
+  "setup": "z=0 table top; x forward from the arm bases, y left of their midline in cm. Tester: grey block 24x6x3 x 21-45, y 19.6-25.6. Seats: rail pairs 30x4x3 mm, 23 mm apart, at x 27/33/39, y 18; a 1.5 mm pin in the tester face enters the plug. Lamps: 26 mm green discs on the tester top, lit while seat, lead and ring terminal conduct to the brass return bar (30x17 cm, x 18-48, y -17 to 0). Leads a/b/c: grey 5 mm cable, 28 cm; plug 30x20x15 mm, ring terminal 22x10x5 mm. Red tray x 31-53, y -46 to -18.",
+  "scoring": "0 if: a good lead's lamp ever goes dark (plug >4 mm off, >5 mm up or >12 deg turned); a plug leaves its seat (>1 cm) not carried by a gripper (TCP within 2.5 cm that moved with it); or a gripper is within 3.5 cm of a lead at the end. Evidence, while connected: faulty lead's lamp went dark when flexed, or both good leads' cables swung sideways >30 deg (top view) with lamps lit. Else: evidence complete before the faulty plug left its seat and lead entirely in the tray 1.0; same but only out of the tester 0.75; only unplugged (plug out of its seat, lead still in the tester) 0.5; no plug out but the evidence complete (diagnosed, not acted on) 0.25; else 0.",
+  "run_limit": "2,400 steps (2 minutes at 20 Hz)",
+  "reset_notes": "Draw the faulty seat from the trial seed (numpy default_rng(seed).integers(3) -> a/b/c); put the faulty lead (dot inside its ring terminal's sleeve, unseen by cameras) there and the good leads in the others. Push each plug against the tester face, lay cables straight, slide ring terminals under the bar's leaf springs, check all lamps lit, and check the faulty lead in a bend jig: lit at 15 deg, dark at 35 deg.",
+  "fidelity": "Cables: 2 cm rigid segments with bending springs (no twist, stretch, plasticity). Plugs held in seats by rails and friction (no latch). The break is scripted: the faulty lead's lamp is dark while its cable 6 cm from the plug bends past 30 deg with the plug seated; any lamp is dark if its plug leaves its seat or its ring terminal leaves the bar. Lamp: visual disc switched in software. Ring terminals lie loose on the bar (real: under a light leaf spring they slide out of).",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-8CYMZK"
+}
