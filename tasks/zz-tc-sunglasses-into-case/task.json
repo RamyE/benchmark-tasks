@@ -1,0 +1,23 @@
+{
+  "title": "Put sunglasses away: fold both temples holding the frame, lay them in the case, snap it shut",
+  "category": "Societal relatability",
+  "keywords": [
+    "bimanual",
+    "sunglasses",
+    "folding temples",
+    "glasses case",
+    "clamshell",
+    "spring hinge",
+    "everyday",
+    "commuting"
+  ],
+  "instruction": "Fold the sunglasses and put them away in their case, then close it.",
+  "context": "Back from the drive in, the sunglasses go in their hard case before they get sat on or scratched. They stand open on the table on their lower rim and temple tips. The frame weighs about 48 g, so a temple pushed in at a normal pace drags it along unless the other hand holds the front; the temples fold one over the other; the folded glasses go in the open case; the lid is pushed over its spring's centre until it snaps shut, the other hand bracing the light case.",
+  "setup": "Table = reference; cm from the arm-base midpoint, x forward, y left. Sunglasses (Ray-Ban RB2140 Wayfarer 50-22-150: about 133 mm front, 150 mm temples) open, standing on the lower rim and temple tips, front centred at x 27, y 0, lenses toward the robot. XINPORT large hard clamshell case (outside 154 x 62 x 56 mm, inside 150 x 58 x 52), long side along y, centred at x 15, y 0, lid hinged along its far edge and open against its 100 deg stop.",
+  "scoring": "End photo and trial video. 0 if the glasses are ever knocked over on the table outside the case (they fall, tipping fast, to lie with the front over 60 deg from upright; a slow lay-down by hand is allowed), if they go into the case with a temple not yet folded, if at the end glasses or case have fallen off the table, or if a gripper ends within 5 cm of either. Folded = each temple turned 60 deg or more in from open. 1.0 = both folded, glasses wholly inside the case, lid shut (within 3 deg) and both arms parked (every gripper point 10 cm from glasses and case, under 2 cm/s, for 0.5 s); 0.5 = both folded and inside, lid not shut or arms not parked; 0.25 = both folded, not inside; else 0.",
+  "run_limit": "1,400 steps (70 seconds at 20 Hz)",
+  "reset_notes": "Take the glasses out, open both temples to their stops and stand them on their tape marks (front's lower rim and both temple tips), lenses toward the robot. Open the case lid fully, onto its stop and set the case on its tape outline.",
+  "fidelity": "Rigid front, endpieces and temples (straight part + earpiece bent 58 deg down), hinge as viscous damping, ~0.75 N at the tip for a 4 s fold (real hinges are mostly friction, so they match only near that pace; no static hold), 0-90 deg stops; folded temples collide and stack. Case: rigid base and lid shells, free on the table; lid hinge with an over-centre spring (pushes open above 40 deg, pulls shut below). Masses: frame 48 g, case 75 g. Lenses are the front's solid plate.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-XZ9GAK"
+}
