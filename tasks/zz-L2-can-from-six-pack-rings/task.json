@@ -1,0 +1,22 @@
+{
+  "title": "Peel one soda can free of its tight six-pack rings and stand it on a coaster, holding the pack down",
+  "category": "Societal relatability",
+  "keywords": [
+    "bimanual",
+    "six-pack",
+    "ring carrier",
+    "soda cans",
+    "hold down while peeling",
+    "elastic packaging",
+    "kitchen"
+  ],
+  "instruction": "Take one can of soda out of the six-pack and stand it on the coaster.",
+  "context": "Six-packs of 12 fl oz cans come joined by a taut LDPE sheet whose 4.4 cm rings sit pre-stretched in each can's neck groove under a 5.48 cm overhanging seam, with 1 mm between cans. Freeing one can is a familiar two-hand kitchen struggle: one hand pins the coupled pack on the counter while the other grips a corner can, tips it outward so the tight ring stretches (>14 N) and peels over the rim without tearing the thin web or popping a neighbour loose, then stands it upright on the coaster.",
+  "setup": "Laminate counter (120x80 cm, z=74.75 cm; origin below arm-base midpoint, x forward, y left in cm). Six 12 fl oz cans (CMI 211/202: 6.6 cm dia, 12.22 cm tall, 5.24 cm neck at z=11.6, 5.48 cm rim, 383 g; tabs +x) in a 2x3 grid (6.7 cm pitch, 13.7x20.4 cm outline) at (34.0, 4.0): x=30.65, 37.35; y=-2.70, 4.00, 10.70. Joined by a 0.38 mm LDPE carrier (Hi-Cone 2x3: six 4.4 cm holes, 8 mm bands, 10 mm webs, stretched on necks). Any can allowed. Cork coaster (10x0.5 cm) at (20.5, -10.5).",
+  "scoring": "Video, ruler and carrier check; highest end tier unless 0 latches. Score 0 if ever: any carrier ring/web visibly tears; >1 can unringed; a remaining ringed can tips >20 deg, lifts >1.5 cm or slides >3.0 cm; or a freed can tips >45 deg unheld. 0.3: 1 can unringed, 5 ringed. 0.6: freed can >=2.0 cm from pack/carrier, 5 ringed upright (<=10 deg, base <=0.5 cm up). 1.0: freed can released at rest (<=2 cm/s, <=0.2 rad/s, <=10 deg) base within 1.7 cm of coaster centre, hands >=10 cm clear for 1 s.",
+  "run_limit": "600 steps (30 seconds at 20 Hz)",
+  "reset_notes": "Inspect the LDPE carrier; replace with a fresh commercial 202-end 6-pack carrier if any ring or web is torn or permanently stretched. Snap all six 383 g cans into the six rings under their 5.48 cm top rims with pull-tabs pointing +x, stand the 2x3 pack inside the 13.7x20.4 cm counter outline centred at (34.0, 4.0) cm, and check the fixed 10 cm cork coaster is centred at (20.5, -10.5) cm.",
+  "fidelity": "Rigid cans (383 g; base-on-counter mu 0.35/0.28, upper grip zone vs rubber pads mu 1.15/1.00) with shoulder, 5.24 cm neck and 5.48 cm seam colliders; fixed cork coaster (mu 0.75/0.65). Pure 240 Hz PhysX pad-contact grasps (50 N jaws, no grasp weld). Carrier: 240 Hz elastic sheet equilibrium + live mesh & 6 neck ring forces (950 N/m seated, 440 N/m tilted peel, 550 N/m axial, 14 N s/m internal damping); peels at >=18 deg tilt & >=32 mm stretch (>=14.1 N > 5-can slip); tears at >=28 N.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-JML7HZ"
+}
