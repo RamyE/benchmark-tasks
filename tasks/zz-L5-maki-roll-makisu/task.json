@@ -1,0 +1,22 @@
+{
+  "title": "Form a cucumber maki with a bamboo mat: tuck-press, peel the mat lip free, cinch shut, and unwrap",
+  "category": "Societal relatability",
+  "keywords": [
+    "bimanual",
+    "sushi",
+    "makisu",
+    "bamboo mat",
+    "tool-sheet decoupling",
+    "compression sealing",
+    "kitchen"
+  ],
+  "instruction": "Use the bamboo mat to form the nori, rice, and cucumber into a straight, closed sushi roll without touching the food directly or rolling the mat inside it, then open the mat flat with the sealed roll resting seam-down on it.",
+  "context": "Rolling maki with a bamboo makisu is an iconic kitchen skill where a slatted outer mat shapes an inner sticky sheet without becoming part of the roll. Winding the mat continuously rolls bamboo slats inside the sushi: both hands must fold and press through the mat to bond the inner rice tuck, peel the mat's near lip clear of the nip before rolling forward, cinch the moistened bare nori strip shut, and unwrap the mat flat.",
+  "setup": "Origin: table top at arm-base midpoint; x forward, y left, z up (cm). Blue HDPE board (30.5x45.7x1.27, 1.6 kg) centred (34.75, 0), x 19.5..50. Cling-wrapped bamboo makisu (24x24x0.3, 40 slats along y, 85 g) at x 18..42, y -12..12 (1.5 cm near overhang). Half nori sheet (10.5x19) at x 19.5..30, y -9.5..9.5, with 6 mm seasoned sushi rice (85 g) on near 9 cm and misted 1.5 cm bare far strip; 1x19x1 cm cucumber baton (19 g) at x 23.5. Nitrile sleeves on jaws.",
+  "scoring": "0 if food/mat leaves board, board moves >2 cm, gripper touches food, mat lip rolls under roll, or nori isn't folded over. Closed tube: <=3.5 cm dia, >=330 deg wrap on >=80% width. Else at end: 0.25 folded over (>=80% width) without a closed tube; 0.50 closed tube, but seam unsealed (>4 mm gap or above axis), skew >1.5 cm, or mat not open (>=20 cm x-span, <=2 cm high) under roll; 0.75 sealed straight roll on open mat, not clear; 1.0 jaws >=2 cm, >=10 cm clear, <2 cm/s for 0.5 s.",
+  "run_limit": "600 steps (30 seconds at 20 Hz)",
+  "reset_notes": "Fit clean food-safe nitrile sleeves on gripper jaws; wipe cling-wrapped makisu and set at x 18 cm (1.5 cm board overhang). Lay fresh 10.5x19 cm half nori rough-side up at x 19.5 cm; level 85 g room-temp (22-26 C) seasoned Calrose sushi rice to 6 mm over near 9 cm with a 9x19x0.6 cm frame; mist bare 1.5 cm far strip once (~0.3 mL water); place chilled (4-8 C) blotted 1x1x19 cm seedless cucumber baton at x 23.5 cm.",
+  "fidelity": "Board: rigid 1.6 kg box. Makisu: 41x11 position-based grid (inextensible twine along x, stiff straight bamboo slats along y, weak shear, board friction); contact-triggered jaw pinches hold slats on closure (<15 mm) and release on opening (>24 mm). Cucumber: rigid 9-slice core. Nori+rice: reduced elastic sheet; tuck and misted bare-strip seam bond only under >=1.4 mm front-cinched mat squeeze for >=0.15 s, else spring open. No loose rice grains. Procedural USD meshes.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-TDGKB4"
+}
