@@ -1,0 +1,23 @@
+{
+  "title": "Install a 1.2 kg RTX A6000 in a workstation: carry by both ends, seat in the x16 slot until latched",
+  "category": "Impact on AI timelines",
+  "keywords": [
+    "bimanual",
+    "GPU installation",
+    "PCIe x16",
+    "workstation build",
+    "AI compute hardware",
+    "two-point registration",
+    "even seating force",
+    "retention latch"
+  ],
+  "instruction": "Install the graphics card in the top x16 slot of the workstation, then let go.",
+  "context": "Deep-learning workstations and GPU nodes are built and upgraded by hand: the GPU is lowered so its rear bracket tab enters the chassis slit while its keyed x16 edge connector aligns with the motherboard slot, then pressed down evenly at both ends until the retention latch clicks into the card's hook (PCI-SIG CEM; Dell Precision/HP Z service manuals). At 266.7 mm and 1.18 kg—over one YAM arm's ~0.9 kg payload—both hands must carry and seat it together.",
+  "setup": "Unplugged Define 7 Compact case (427x210x474 mm, steel) on its right side (x 16.5..61.9 cm, +2 cm feet; y -19.5..23.2; rim z 21.0; left panel, top panel/bracket & slot 1-2 covers off, top rail z 4.0). ATX board (305x244x1.6 mm, z 2.60) w/ CPU cooler, 4 DIMMs, lower x16 at x 38.06, top x16 Slot 1 at x 34.00 (mouth z 3.725, floor z 2.925, latch open 38 deg; rear ledge z 14.00, tab slit). 1.18 kg RTX A6000 (266.7x111.15x38 mm; or weighted GPU) in PE foam cradle at (12.0,-1.5). Details in README.",
+  "scoring": "Score 0 if at any time: card lifted (>2.2 cm up outside Slot 1) with 1 gripper for >0.5 s; touches table/floor (<1.0 cm) or CPU cooler, DIMMs, bare board, or lower Slot 3; or case moves >2 cm. Cumulative at end: 0.3 tab in rear slit & both finger ends >=1 mm into Slot 1; 0.6 seated >=7.0 mm (<=1.5 mm gold above lip; flange <=1.5 mm from ledge) & level <=1.5 deg (feeler + inclinometer); 0.85 latch closed (<=5 deg); 1.0 jaws open, TCPs >=10 cm clear & still (<=1 cm over 2.0 s).",
+  "run_limit": "600 steps (30 seconds at 20 Hz)",
+  "reset_notes": "Keep workstation unplugged/ESD-safe. Press Slot 1's white latch wing open to 38 deg, lift the card straight out with both hands, and set it upright connector-down in the ESD foam cradle at (12.0, -1.5) cm with bracket toward -y.",
+  "fidelity": "Procedural rigid geometry at true dimensions and 1.18 kg mass. PCIe x16 contact force (30-45 N typical, 94.3 N spec max) is 36 N vertical dry resistance (18 N per finger end) in Slot 1. Grasp engages only on two-pad contact as a compliant joint capped at pad friction (50 N = 2 x mu 0.5 x 50 N squeeze; 0.5 N m twist, 1.5 N m tip); above that the card slips. >=7.0 mm seating at <=1.5 deg tilt snaps the latch shut. Fans, cables, thumbscrew omitted.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-V9FPXN"
+}
