@@ -1,0 +1,23 @@
+{
+  "title": "Take a punched handout from the 3-hole punch, thread all three binder rings and snap them shut",
+  "category": "Societal relatability",
+  "keywords": [
+    "bimanual",
+    "school",
+    "office",
+    "three-ring binder",
+    "hole punch",
+    "paper",
+    "registration",
+    "deformable"
+  ],
+  "instruction": "Put the punched handout into the binder and close the rings.",
+  "context": "Students, teachers and office workers file punched handouts in three-ring binders every day. A 10-sheet packet is floppy: held at one point, the far end droops so the three holes (10.8 cm apart, 21.6 cm span) miss the open rings. Both hands grasp its two side margins to draw it straight out of the punch, keep the punched edge straight while lowering all three holes onto the open rings at once, then snap the rings shut without pinching the paper.",
+  "setup": "Desk; cm from arm-base midpoint, x forward, y left, z above desk. Taped Swingline 74063 3-hole punch (29.7x10.2x5.7) at (43.7,+15.5), long side along y, 4 mm throat facing -x at x 38.6 (z 2.8-3.2, stop x 40.5). Inside throat: 10-sheet letter handout (21.6x27.9 cm, 20 lb, 46 g; three 7.1 mm holes on 10.8 cm centres, 9.5 mm from +x edge at x 40.4), overhanging -x. Taped open Avery 05714 1 in round-ring binder (54.0x29.5) at (29.5,-15.5), spine along y, 3 rings open 26 deg.",
+  "scoring": "End photo, pages turned one by one. 0 if any page ends torn or crimped (sim: hole pulled >6 mm past wire >0.15 s leaves a permanent tear; rings shut on unthreaded paper) or paper stays in the punch. 1.0: all 10 sheets on 3 distinct rings, rings shut, packet flat on one cover (centre >=6 cm off x 29.5, y -25.3..-5.8, >=95% of points beyond +-2.5 cm of x 29.5 under z 3.5), jaws open, arms >=10 cm clear, still. 0.6: 3 rings threaded. 0.3: 1-2.",
+  "run_limit": "900 steps (45 seconds at 20 Hz)",
+  "reset_notes": "Press the booster tabs outward to open the three binder rings to 26 deg per half; square up an untorn 10-sheet punched letter handout (printed side up) and slide its punched 27.9 cm edge into the punch throat against the x = 40.5 cm stop, centred on y = +15.5 cm.",
+  "fidelity": "Punch and taped open binder: fixed rigid boxes. Handout: 10-sheet packet as one XPBD 22x15 sheet (no page slip) (46 g, 1.1 mm, bending 3.3e-3 N m for ten 20 lb sheets, uncalibrated) with cut-out holes; contact-triggered border pinch only when both pads close on a margin (jaw <=0.4 cm), releasing >2.4 cm or >4.5 cm slip. Rings/boosters: coupled arcs with bistable snap past 12 deg on opposing pad squeeze or inward booster push; geometric 3.2 mm tip capture and tear/pinch checks.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-HGKFLE"
+}
