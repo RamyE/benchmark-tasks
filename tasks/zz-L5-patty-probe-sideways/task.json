@@ -1,0 +1,23 @@
+{
+  "title": "Check a burger patty's doneness: hold it with tongs and probe sideways into its centre",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "food safety",
+    "instant-read thermometer",
+    "doneness check",
+    "hold while act",
+    "griddle",
+    "line cook",
+    "tongs"
+  ],
+  "instruction": "Take the burger patty's centre temperature with the thermometer, probe in through its side, then put the thermometer and tongs down.",
+  "context": "Restaurant cooks (O*NET 35-2014, 1,417,500 US workers) 'Observe and test foods to determine if they have been cooked sufficiently ... piercing them with utensils'; food prep workers (35-2021, 908,500) 'Take and record temperature of food'. Per USDA FSIS guidance, thin burger patties are probed sideways to reach the centre. The 100 g patty slides on an oiled griddle under probe force, so tongs must stabilize it throughout insertion and reading.",
+  "setup": "Origin: table below arm-base midpoint; x fwd, y left, z up (cm). Unheated Lodge LDP3 cast-iron griddle (42.5x24.1x1.6, flat side up, 1.25 mL oil) at (34,0) on a 60x44x0.15 silicone mat. Precooked 4 C beef patty (10.5 diax1.6 cm, 100 g, 4 mm centre dot) at (30,0). ThermoWorks Thermapen ONE (15.6x4.8x1.9, 115 g; 10.9 cmx3 mm probe unfolded +x, 1.5 mm tip, 3 mm red band 5.25 cm from tip) flat at (22,-28). Unlocked 30.5 cm stainless spring tongs (165 g, jaws 12.5 cm open +x) at hinge (13,30.5).",
+  "scoring": "0 if hand touches patty (<6 mm), probe is inside without held tongs clamping patty (<6 mm/jaw), patty slides >2 cm, tilts >30 deg or leaves griddle, or probe enters/exits top, bottom or far side. Else: 0.2 rim entry >=1 cm (<=20 deg from level); 0.5 tip at centre (<=8 mm plan, <=4 mm mid-height); 0.7 held there 2 s with <=8 C stabilised LCD; 1.0 also probe >=2 cm out, tools resting on table off griddle (<2 cm/s, LCD up), jaws >=3 cm open, hands >=10 cm clear & <2 cm/s for 1 s.",
+  "run_limit": "900 steps (45 seconds at 20 Hz)",
+  "reset_notes": "Fresh precooked 100+-8 g beef patty (10.5+-0.4x1.6+-0.2 cm, 4 mm dot) at 4+-2 C. Wipe cold griddle dry; spread 1.25 mL oil on central 15x15 cm (0.15-0.30 N slide, 2-3.5 N pierce). Fit nitrile pad sleeves; alcohol-wipe handles. Place patty at (30,0), unfolded sleeping Thermapen at (22,-28) +x, unlocked tongs at (13,30.5) +x. Top+side cams track always-visible shaft base (x_s,y_s,z_s, 109 mm from tip) + pitch theta for 3D tip (r_xy<=8 mm, z_tip=z_s+109 sin theta in 4-12 mm) + LCD <=8 C.",
+  "fidelity": "Fixed cold griddle; rigid 100 g patty (mu 0.20 on iron, 0.95 on tong jaws). Probe-patty collision off: while tip is inside, a D6 joint applies 2.5 N-capped axial damping and 1500 N/m lateral springs; a 0.4 s tip thermistor drives the LCD from 22 C (motion-woken on pickup) to 4 C in the patty. As a stand-in for pad friction, a grasp-assist weld engages only on two-pad contact (>0.02 N on each pad) while jaws close, releasing on open; held tong arms squeeze with jaw closure.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-NEUZ8C"
+}
