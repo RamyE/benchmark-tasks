@@ -1,0 +1,23 @@
+{
+  "title": "Sew a curved seam on a sewing machine, steering the fabric so it stays 15 mm in from the edge",
+  "category": "Societal relatability",
+  "keywords": [
+    "bimanual",
+    "sewing machine",
+    "seam allowance",
+    "curved seam",
+    "fabric guiding",
+    "deformable",
+    "home sewing",
+    "crafts"
+  ],
+  "instruction": "Sew the seam on the machine from the start mark to the end mark, 15 mm in from the curved edge, then stop the machine and let go of the fabric.",
+  "context": "Sewing a curved seam on a home machine (for a rounded cushion, bag, pocket or garment mend) is the signature two-handed skill of home sewing. The feed dogs pull the floppy cotton at a fixed pace while the needle pins the pivot: the robot starts the machine, continuously turns the sheet 90 deg round the corner with both hands trading holds clear of the needle without dragging against the feed, and stops on the mark, leaving a bright contrasting seam that shows any wobble at once.",
+  "setup": "Station table; cm from arm-base midpoint (x forward, y left). Brother CS7000X-class machine (41 x 17 x 31 cm) sunk flush, needle at (33, -5), head/arm to its right, Start/Stop button on head front, wire finger guard at needle, throat-plate 15 mm line taped yellow. Two basted navy cotton layers (24 x 20 cm, near-right corner 6 cm radius) under the lowered foot, right edge on the 15 mm line, needle in start mark 3 cm from far end; chalked 15 mm line ends on near edge 5 cm past the curve.",
+  "scoring": "Score 0 if: fabric tears; finger <3 cm from running needle (guard in real trials); machine runs at end; fabric held, or hands not open (>=2 cm), >=10 cm from fabric and <2 cm/s for last 0.5 s; <2 stitches, needle off fabric, or stitch length after 1st outside 1-4 mm; seam <19 cm along chalked line or >1 cm past start/end mark. Else by curved-edge allowance at all stitches: 1.0 if 12-18 mm and <=1 cm from end mark along line; 0.5 if 9-21 mm and <=1 cm; 0.25 if 8-22 mm; else 0. Video + ruler.",
+  "run_limit": "1,200 steps (60 seconds at 20 Hz)",
+  "reset_notes": "Cut two 24 x 20 cm navy cotton pieces from the template (6 cm corner radius) or unpick the seam, baste together, and chalk the 15 mm line and start/end marks. Thread top and bobbin with contrasting thread (80/12 needle), align the right edge on the 15 mm line, lower the needle into the start mark, then the presser foot. Set speed slider to ~240 spm (low, ~1/4 up) and 2.5 mm stitch length (~1 cm/s).",
+  "fidelity": "Fabric: first-party Warp position-based cloth sheet (two basted layers as one, 8 mm cells), friction on bed, gripped only on two-pad contact when jaws close across an edge. Feed: rule model, not contact: within 15 mm of needle fabric moves 2.5 mm/stitch away and turns only about needle when pulled round; hard pull/hold-back slips it. Thread and needle stroke visual only. Machine rigid, button a sprung slide. Uncalibrated.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-EJPBDM"
+}
