@@ -1,0 +1,24 @@
+{
+  "title": "Push a brake caliper's piston flush on the car with a C-clamp over the worn pad, hose attached",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "automotive",
+    "brakes",
+    "C-clamp",
+    "caliper piston",
+    "brake hose",
+    "wheel well",
+    "hold square and turn",
+    "regrasp"
+  ],
+  "instruction": "Push the brake caliper's piston flush into its bore with the C-clamp over the worn pad without cocking the piston or kinking or stretching the brake hose, then remove the clamp.",
+  "context": "Automotive service technicians and mechanics (O*NET 49-3023.00, 825,800 US jobs) have core task \"Repair, reline, replace, and adjust brakes.\" Front pad changes on single-piston floating calipers require pressing the piston back over the worn pad. In a tight wheel well with a loose 1.8 kg caliper on a block still on its brake hose, this tests squaring a C-clamp <=3 deg to the bore across ~14 T-pin regrasps under 150 N+ seal load without cocking it or straining/kinking the hose.",
+  "setup": "cm from arm-base midpoint (x fwd, y left), z above table. Front corner, wheel off: static wheel-well liner/arch, knuckle/strut, 136 mm hub w/ studs, 262x21 mm rotor, lower arm, wood block (top 11.4). Free on block: 1.8 kg iron caliper (54 mm piston, Cardone 19-B1833 ref), bore along x at y -1.5, z 14.8, back x 36.5, slot up; worn pad on piston, 8 mm out; 18.5 cm rubber hose to liner bracket (49,-21.2,20.5). IRWIN 225104 4 in C-clamp (0.51 kg, open 73 mm) on rack at (33.5,17,14.8).",
+  "scoring": "Out = piston past bore face (8 mm start). Seated = clamp along bore, swivel <=2 mm off back, jaw <=2 mm off pad, both <=2 cm off bore. 0 if ever: part >2 cm below table, caliper tips >15 deg or slides >3 cm, piston pushed >=1 mm unseated or >3 deg off bore, hose span >18 cm or bend >55 deg. 0.25: out >4 mm, seated. 0.5: <=4 mm (seated). 0.8: <=1 mm. 1.0: <=1 mm, clamp resting (<=2 cm/s, <=0.5 rad/s, z>=top-1 cm) >=2 cm off caliper/pad/hose, jaws >=2 cm, TCPs >=10 cm clear, <=1 cm/1 s.",
+  "run_limit": "2400",
+  "reset_notes": "Closed hydraulic rig: Cardone 19-B1833 caliper filled with DOT 3 fluid over a drip tray; 18.5 cm hose plugged at the liner bracket; bleeder cracked 1/4 turn with clear tube submerged in a catch bottle for repeatable seal + orifice resistance. Safe reset: pull the pad clip slowly against an 8 mm stop block (drawing fluid back without air or piston ejection), set caliper slot-up inside tape marks on the wood block, open clamp to 73 mm, hang on rack.",
+  "fidelity": "True-size rigid parts; liner, rotor, hub, knuckle static. Contact grasp only (no weld): finger pads and clamp's 18 mm grip web use high-friction elastomer (mu 2.8 static, 2.4 dynamic vs ~1 for rubber on iron) as a stand-in for soft pad compliance. Piston: prismatic joint, 1e6 N/m seal slipping at 150 N plus 6e4 N s/m bleeder drag. Screw tracks T-handle at 2.117 mm/turn (4e5 N/m, self-locking, load-scaled drag); swivel fixed. Hose: 6 capsules, 0.20 N m/rad bend springs; fluid omitted.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-PDLN68"
+}
