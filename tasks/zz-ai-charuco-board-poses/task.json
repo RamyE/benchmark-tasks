@@ -1,0 +1,23 @@
+{
+  "title": "Calibrate a robot cell's camera: show it a ChArUco board held still at every tilt, edge and distance",
+  "category": "Impact on AI timelines",
+  "keywords": [
+    "bimanual",
+    "robot lab",
+    "camera calibration",
+    "ChArUco",
+    "closed-chain carry",
+    "held poses",
+    "tilting",
+    "data collection"
+  ],
+  "instruction": "Calibrate the camera with the board, then put the board back in its stand.",
+  "context": "A robot cell's fixed camera is calibrated by showing it a rigid ChArUco board in many still poses, as ROS camera_calibration asks: tilted left, right, up and down, moved so the pattern reaches every edge of the image, and both near and far, the whole pattern in frame each time. The 40 x 32 cm board is too wide for one gripper, so both hands carry it by its side edges, off the stand, and move and tilt it together as one rigid piece.",
+  "setup": "Workcell table; cm from arm-base midpoint (x forward, y left, z above table). Intel RealSense D455 (124x26x29 mm) on a 2 cm steel post at (62, 0), lens 25 cm up, level along -x; colour 1280x800, fx=fy=640 px. ChArUco board (OpenCV DICT_5X5_100, 9x7 of 40 mm squares, 30 mm markers, 2 cm margin) on 3 mm aluminium composite, 40x32 cm, 0.45 kg, upright on its long edge in a wooden stand at (30, 0), pattern toward camera. Stand: 20x8x4 cm, 4 mm slot along y, 3 cm deep, 6 mm 45 deg chamfer.",
+  "scoring": "0 if board touches table (<4 mm) or comes within 3 cm of camera. Held view = pattern in frame (10 px margin) facing camera, both grippers on opposite side edges (outer 6 cm), board >=2 cm above stand, moving <2 mm and <0.3 deg for 1 s. 0.08 per item (11): straight (<8 deg), tilted 18-50 deg left/right/up/down (<12 deg cross-axis), pattern in outer 10% left/right/top/bottom, width >=60% (near) and <=50% (far). 1.0 = all 11 + board upright in slot + grippers >=10 cm clear, <=2 cm/s (0.5 s).",
+  "run_limit": "1,800 steps (90 seconds at 20 Hz)",
+  "reset_notes": "Stand the board upright in its slot at (30, 0), pattern toward the camera. Camera and stand stay fixed.",
+  "fidelity": "Board: one rigid plate, true size and mass (0.45 kg), friction 0.9/0.8; held only by gripper-pad friction (no weld). Stand (with 45 deg slot bevels), post and camera: fixed rigid bodies. Views are scored geometrically from the board pose through the D455 colour intrinsics (all corners in frame, facing, edge-gripped, still) instead of running marker detection on rendered frames; the OpenCV pattern is textured on the board.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-9X4N9A"
+}
