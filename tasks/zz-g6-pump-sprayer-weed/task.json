@@ -1,0 +1,23 @@
+{
+  "title": "Pressurize a 1-gallon pump sprayer and spot-spray a weed hidden under an overhanging hosta leaf",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bimanual",
+    "landscaping",
+    "agriculture",
+    "pump sprayer",
+    "spot weeding",
+    "canopy lifting",
+    "pressure gauge",
+    "tool use"
+  ],
+  "instruction": "Pump the 1-gallon garden sprayer into its green 4 to 8 PSI low-drift range, hold the overhanging hosta leaf back off the dandelion weed in the planter box, spot-spray the dandelion crown for at least 2 seconds without wetting the hosta leaf, and return the shut-off wand to its holster.",
+  "context": "Landscaping and groundskeeping workers (O*NET 37-3011.00, 1,188,600 US jobs, 2025: 'Mix and spray or spread fertilizers, herbicides, or insecticides onto grass, shrubs, or trees, using hand or automatic sprayers or spreaders') and farmworkers (45-2092.00, 546,800 jobs) spot-treat weeds beside ornamentals daily. One hand braces the unclamped poly tank against plunger upstroke drag while the other pumps to pressure, then lifts overhanging foliage by its stem while the wand treats the weed below.",
+  "setup": "Table; cm from arm-base midpoint (x fwd, y left, z up). Chapin 20000 1-Gal Sprayer + Winters PFQ800 0-15 PSI gauge (19.1 cm OD, T-plunger z=30.2..41.7, +y lug (21.5,20.1,22.5), 86 cm hose, 11.5 cm grip + colliding trigger + 30.5 cm wand in U-holster (20.5,-31.0,17.5), 500 mL water, 1.16 kg) unclamped in 22x22x1.8 cm tray (21.5,8.5). Novelty #16190 planter (20.3x45.7x16.5 cm) at (44.5,-4.0): PE hosta from crown (43.5,12.5,14.8) drapes 7.6x10.4 cm TeeJet blade over 9 cm weed (43.5,-5.5,14.2).",
+  "scoring": "0 if ever: hosta leaf wets (TeeJet blue), valve opens (>=8 mm) >5.5 cm off (43.5,-5.5), outside 2.5-12.0 cm height or not 3.5-8 PSI, P >10 PSI, tank lifts >2 cm/shifts >3 cm/tilts >15 deg, leaf >75 deg, hose >86 cm, or tank/wand off table. Else: 0.25 >=7 strokes (>=9 cm) to 4-8 PSI & plunger <=2 cm; 0.55 leaf >=38 deg & wand aimed; 0.85 lever squeezed >=10 mm >=2.0 s; 1.00 shut (<=2 mm), holstered, leaf <=12 deg, arms open (>=5.5 cm), >=10 cm clear & <=1.5 cm still 1 s.",
+  "run_limit": "1,200 steps (60 seconds at 20 Hz)",
+  "reset_notes": "Vent tank to 0 PSI, verify 500 mL clean tap water (1.16 kg tank), seat plunger at z=30.2 cm, centre tank unclamped in the tray at (21.5,8.5), wipe nozzle dry, and seat wand in the twin U-saddle holster at (20.5,-31.0,17.5). Tape (3M 9474LE) and clip fresh dry yellow TeeJet 20301-2N (7.6x5.2 cm) cards over both faces of the hosta blade and the dandelion crown; fit neoprene jaw sleeves and clear PE splash drapes over both arms; fixed camera on gauge and lever-travel sticker.",
+  "fidelity": "Rigid/articulated PhysX 240 Hz, 20 Hz control. Unclamped 1.16 kg tank: Z-prismatic plunger (13.8 N seal drag lifts the unbraced 11.4 N tank; Boyle's law +0.584 PSI/11.5 cm stroke). Shut-off lever: colliding Y-prismatic spring joint (0..12 mm, 350 N/m) pushed by a finger pad. Hosta: crown spring hinge, zero rear lever. Grasp: force-limited pad grip, no weld; engages only on contact on both pads with jaws squeezing; caps 50 N pull, 0.50 N m twist, 1.50 N m tip; slips above.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-MHDT43"
+}
