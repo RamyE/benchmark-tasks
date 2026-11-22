@@ -1,0 +1,23 @@
+{
+  "title": "Twist-fold a pop-up car window sunshade into its three-loop coil and slip it into its pouch",
+  "category": "Societal relatability",
+  "keywords": [
+    "bimanual",
+    "twist fold",
+    "spring steel hoop",
+    "coordinated twist",
+    "hand-over",
+    "car sunshade",
+    "pouch",
+    "insertion"
+  ],
+  "instruction": "Fold the sunshade and put it in its pouch.",
+  "context": "Pop-up car window shades (like pop-up laundry hampers, reflectors and play tents) open by themselves from a sewn-in spring-steel hoop and are famously awkward to fold back: you hold the hoop at two opposite points, twist your hands in opposite directions while bringing them together until it buckles into three stacked loops, press and re-pinch across the stacked loops so it cannot spring open, and slide it into its flat pouch.",
+  "setup": "Origin: table top below the arm-base midpoint; x forward, y left (cm). A round twist-fold pop-up side-window sunshade (44 cm across, 1.15 mm ASTM A228 spring-steel wire in a 1 cm fabric hem, black mesh panel, 90 g) lies open and flat at (38, 0). Its open-mouth sleeve of 3 mm fluted PP twinwall sheet (350 gsm Coroplast, 22 x 20 cm, 4 cm inside height, 6 mm side/back walls, 7 x 7 cm top thumb notch, 40 g) lies upright at (45, 38), mouth facing -x.",
+  "scoring": "0 if shade or pouch ever falls off the table, or shade is never folded. 0.25: folded at some point (all wire <=10 cm from hoop centre, <=20 cm across). 0.5: at end, pouch upright on table and shade folded and wholly inside it (all wire + 5 mm hem radius inside inner outline and under top panel, none protruding). 1.0: as 0.5, both grippers released and parked >=10 cm clear, <2 cm/s for 0.5 s. Real trial: video + overhead and mouth-level end photos.",
+  "run_limit": "1,200 steps (60 seconds at 20 Hz)",
+  "reset_notes": "Take the coil out of the pouch and let it spring open; lay the shade flat on its mark at (38, 0) and the empty pouch upright at (45, 38), mouth facing -x.",
+  "fidelity": "48-seg PhysX hoop matching 1.15 mm spring-steel wire (EI/L=0.60, GJ/L=0.47 N m/rad). Force-capped pad grip (no weld; 50 N pull, 0.50 N m twist, 1.50 N m tip) engages only on two-pad contact (>=0.02 N while closing) and releases on open. Squeezing <=16 cm with >=20 deg opposite twists (>=90 deg rel) relaxes joint rest targets over 0.85 s to the Lk=0 3-loop coil (1.80 N m/rad = 3x wire, no state writes). Single-loop air holds and protruding half-inserts spring open.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-PTH6W7"
+}
