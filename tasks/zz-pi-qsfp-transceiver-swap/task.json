@@ -1,0 +1,25 @@
+{
+  "title": "Swap a failed QSFP28 optic: unplug its fibre first, open the bail and pull it, seat the spare",
+  "category": "Impact on AI timelines",
+  "keywords": [
+    "bimanual",
+    "data center",
+    "AI cluster",
+    "QSFP28 transceiver",
+    "LC fibre connector",
+    "push-pull tab",
+    "bail latch",
+    "field-replaceable unit",
+    "unstated order",
+    "end-face contamination"
+  ],
+  "instruction": "The optic in port 5 has failed. Replace it with the spare from the tray, put the failed one in the tray, and reconnect its fibre.",
+  "context": "Optics are the part most often swapped in AI clusters: switch and cable faults were 8.4% of unexpected interruptions in Llama 3's 16k-GPU pre-training (Meta, 2024). Data-centre technicians unplug the fibre first, keep its end face off every surface, swing the bail open, pull the module, seat the spare until it latches and reconnect. Tested: the unstated order, and one hand keeping the fibre clean while the other swaps a true-size module.",
+  "setup": "cm from arm-base midpoint (x fwd, y left, z up). 2U 2-post 19in rack, posts y +-22.5..26: U1 LC patch panel, U2 (top) unpowered 1U 32-port QSFP28 switch; finger managers y +-26..33.6. Faceplate x 37, port row z 7.5, pitch 2.15. Port 5 (y 0): failed LR4 optic, red bail, blue LC on 31 cm yellow cord taped at (10,6). Ports 1,9 (y +-4.3): live optics; their cords and 8 panel cords (4 mm OS2) run into the managers. 3,7 plugged. ESD tray at (23.5,-19), spare at (23.5,-21.3).",
+  "scoring": "Score 0 if ever: port 5 optic moves >2 mm out while its LC is in; once out, LC front face within 1 mm of any surface outside a receptacle (table, rack, managers, live cords, switch, tray, cord, module shell, bail, either gripper); port 1 or 9 moves >2 mm; failed optic re-enters a port. Else, released: 0 failed in port or <50 mm out; 0.25 out >50 mm; 0.50 +spare latched in port 5; 0.75 +LC latched in spare; 1.0 +failed in tray, grippers open, >=10 cm clear, still.",
+  "run_limit": "1,800 steps (90 seconds at 20 Hz)",
+  "reset_notes": "Seat the red-bail module in port 5, bail upright, until it clicks; push the blue LC plug in until it clicks, lay the 31 cm yellow cord smoothly to (10, 6) cm and press the tape down. Place the silver-bail spare in the ESD tray on its outline, label up, facing +x. Check ports 1 and 9 align with their witness marks, the ten live cords sit in their manager straps on the stated routes, and all dust plugs sit flush. Clean and inspect the LC end faces.",
+  "fidelity": "Rack, units, managers, live cords (static capsule chains), switch, tray fixed. Pad grip, no weld: compliant joint only on two-pad contact + closing jaws; 50 N pull, 0.5 N m twist caps; slips above. LC push-pull tab: prismatic (-4.5..0 mm, 120 N/m); >=2.5 mm pull unlatches LC weld, pushing seats it. Cage latch: weld freed past -80 deg bail, re-latched home. Bail: over-centre spring; mated LC stops it near -67 deg. Ports 1,9: 15 N welds. Port 5 cord: 15 ball-jointed capsules. No optics.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-W3L26G"
+}
