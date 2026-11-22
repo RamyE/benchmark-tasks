@@ -1,0 +1,22 @@
+{
+  "title": "Open a half-gallon milk carton's gable-top spout on its 'open here' end, holding the carton",
+  "category": "Societal relatability",
+  "keywords": [
+    "bimanual",
+    "gable-top carton",
+    "milk",
+    "paperboard",
+    "hold while opening",
+    "spout",
+    "kitchen"
+  ],
+  "instruction": "Open the milk carton's spout.",
+  "context": "Gable-top cartons hold a large share of refrigerated milk and juice, and opening a fresh one is a familiar kitchen act. One hand steadies the full 2 kg carton while the other pushes both triangular wings on the 'OPEN HERE' end back, peels the sealed front top-fin seam apart into an open pouring passage, and pinches and unfolds the tucked V-spout into a pouring lip. Pushing without holding tips the carton; pushing the permanently sealed far end gets nowhere.",
+  "setup": "Counter (cm from arm-base midpoint, x forward, y left). Fixed 32 x 32 x 2.4 cm rimmed silicone spill tray (2.11 L, 9.5 cm mark) at (30, 0). Upright in mark, ridge along y: sealed 1.89 L Pure-Pak carton, 2.00 kg (9.5 x 9.5 cm base, 19.0 cm walls, 4.5 cm roof, 1.3 x 0.36 cm 4-ply top fin of 0.85 mm PE-coated board, 24.8 cm tall). Rear +y half is permanently sealed; -y ('OPEN HERE') has two 4.75 x 4.5 cm wings, a peel-sealed split front top-fin seam, and a 3.4 cm V-spout 1.6 cm inside -y.",
+  "scoring": "Score 0 if ever a +y wing folds >15 deg, carton tips >20 deg, base shifts >8.0 cm, wing/seam unseals without other gripper in steadying contact (>=0.5 N in sim; pad contact on video), or at end a gripper is <2 cm from carton/seam/spout. Else: 0.2 both -y wings unseal (>=25 deg peak, >=15 deg end); 0.4 front seam separates (>=12 deg/side peak, >=10 deg end, >=2.0 cm throat); 0.7 lip >=1.0 cm past -y; 1.0 lip >=2.0 cm, throat >=2.0 cm, grippers >=10 cm clear & <2 cm/s for 1 s.",
+  "run_limit": "600 steps (30 seconds at 20 Hz)",
+  "reset_notes": "Fit disposable nitrile sleeves over both gripper fingers and waterproof wrist wraps before every trial, drape the counter around the arm bases, wipe the 2.11 L rimmed silicone spill tray dry, and set a fresh factory-sealed commercial 1.89 L (2.00 kg) chilled (2-4 C) whole-milk Pure-Pak 95 x 95 mm flat-gable paperboard carton (no screw cap), wiped dry, upright inside the 9.5 cm mark at (30, 0) with 'OPEN HERE' facing -y.",
+  "fidelity": "Rigid 2.00 kg carton in fixed 2.11 L mu_s=0.75 silicone tray (liquid ballast; wall squeeze unmodelled). Pure PhysX contact grasping (mu_s=2.00 on 3.6 mm 4-ply fin and 3.4 mm 4-ply spout crease; zero welds). Hinged wings (0.075/-y, 0.250/+y N m seals -> 0.015 N m friction) and split front roof/fin seam (0.085 N m/side peel seal breaking at 12 deg -> 0.025 N m friction + <=16 deg plastic crease rest) must both unseal before the V-spout unlocks and unfolds up to 70 deg (0.055 N m).",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-3F7496"
+}
