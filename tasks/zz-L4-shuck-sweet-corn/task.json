@@ -1,0 +1,23 @@
+{
+  "title": "Shuck an ear of sweet corn: peel the husk back in two halves, then snap it off with the stalk end",
+  "category": "Societal relatability",
+  "keywords": [
+    "bimanual",
+    "sweet corn",
+    "shucking",
+    "husk peeling",
+    "stalk snap",
+    "gentle grip",
+    "kitchen prep",
+    "produce"
+  ],
+  "instruction": "Shuck the ear of corn and leave the bare cob on the board and the husk in the bowl.",
+  "context": "Shucking fresh corn on the cob is a classic household chore: one hand steadies the ear while the other grasps the husk tips and silk, peels one side down past the base and then the other, grips the bare cob gently without crushing tender milk-stage kernels, and snaps the folded husk bundle off with the stalk stub into a scrap bowl. Pulled with one hand, the ear slides across the board.",
+  "setup": "Origin: table top under arm-base midpoint; x forward, y left, z up (cm). Fixed OXO Acacia board (27.0x37.6x2.8, long side along y) at (27.0, 11.0), white lines at y 0.0 and 23.0. USDA Fancy sweet corn ear (1-4 C, 28.5 cm, 0.34 kg) along x 27.0: 4.5x2.4 shank (y 0..4.5, -y), 18.5x4.4 cob (y 4.5..23.0), husk parted into +x/-x flag tips + silk (y 23..28.5). Winco 5-qt steel bowl (29.2 OD, 27.0 ID, 8.9 tall) at (29.0, -26.5).",
+  "scoring": "0 (latched) if cob leaves board onto table, any part leaves table, or bare cob has crushed kernels (real: split/milky kernel or >2 mm dent; sim: >35 N bare-cob clamp >=2 steps). Else end state: 0.25 = 1 husk half peeled behind cob base + 2 cm (>=50% cob exposed); 0.5 = both halves + silk peeled behind base + 2 cm; 0.75 = husk + shank detached >=3 cm and bare cob flat on board; 1.0 = all husk + shank inside 27.0 cm bowl below rim, jaws >=5 cm open, grippers >=10 cm clear, <=2 cm/s for 1 s.",
+  "run_limit": "1,200 steps (60 seconds at 20 Hz)",
+  "reset_notes": "Keep USDA Fancy ears at 1-4 C; pick 28.5+-2 cm, 0.34+-0.05 kg (cob 18.5+-1.5x4.4+-0.4 cm, shank trimmed 4.5+-0.8 cm), part flag tips into +x/-x halves (~3.8 cm apart), place along x 27.0 between y 0.0 and 23.0 marks, shank toward -y. Fit disposable nitrile sleeves on gripper pads and wipe between runs.",
+  "fidelity": "Husk grasps use PhysX contact. Compliant two-pad contact grips cap shank pull/twist/tip at 50 N, 0.50 N m, 1.50 N m; the gently held cob uses 25 N, 0.25 N m, 0.75 N m. They slip above caps and release on opening or contact loss. Husk: two hinged halves with silk. Shank: 5.5 N m/rad, snaps at 32 degrees (3.07 N m).",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-E8HUFU"
+}
