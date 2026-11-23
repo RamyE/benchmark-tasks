@@ -1,0 +1,22 @@
+{
+  "title": "Seat a 6.6 kg Nexus 9504 line card: slide it in, then close both ejector levers together",
+  "category": "Impact on AI timelines",
+  "keywords": [
+    "bimanual",
+    "data center",
+    "spine switch",
+    "line card",
+    "ejector levers",
+    "fabric connectors",
+    "AI cluster network"
+  ],
+  "instruction": "Install the line card in the switch's empty slot, then let go.",
+  "context": "AI clusters are wired through modular data-center switches whose line cards technicians install and swap by hand. Cisco's Nexus 9504 guide: slide the card along its guides until it stops 0.6 cm proud, then rotate both ejector levers toward the chassis until they click; the levers seat the card onto the fabric modules. The two levers sit at the ends of a 43.2 cm wide card, beyond one arm's reach of both.",
+  "setup": "Unpowered Cisco Nexus 9504 chassis (44.5 W x 84.2 D x 31.1 H cm, 7 RU), fixed on the bench, front facing the robot; line card slot 4 empty. An N9K-X9736C-FX line card (43.18 cm wide, 41.91 cm deep inside the chassis, 4.4 cm tall, 6.62 kg) rests in slot 4's guides with its back 30 cm in and the back face of its faceplate (the plane that meets the chassis front when seated) 12 cm proud; both ejector levers rotated open. Arms at ready pose.",
+  "scoring": "'Proud' = gap from the chassis front to the back face of the card's faceplate, at each card end. Score 0 if at any time the card is pulled back out (>30 cm proud, under 12 cm of card left in the guides) or the chassis moves >1 cm. Cumulative at end: 0.3 pushed to the levers' stop (<=0.8 cm proud at both ends); 0.7 seated (<=1 mm proud at both ends) with both levers closed and clicked; 1.0 both grippers open, TCPs >=10 cm from card and levers, and still for 2.0 s.",
+  "run_limit": "600 steps (30 seconds at 20 Hz)",
+  "reset_notes": "Pull both lever knobs outward to release them (on the real card press their release buttons first; on the fixture the magnet latches release under hand force), set both levers 45 deg open, then slide the card back along its guides until its faceplate is 12 cm proud. Fixture build and reset details: README, fixture_drawings.svg, fixture.scad.",
+  "fidelity": "Rigid geometry at Cisco's published chassis and line card dimensions and the card's 6.62 kg mass. Card slides in physical side guides. Each lever is a hinged body whose knob catches the chassis edge only if the lever is open as its end reaches the stop; closing it levers that end the last 0.6 cm against a speed-independent 50 N connector push-back; a click latch holds a closed lever. No welds: arms push the card and levers with their fingers.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-FLKG9Y"
+}
