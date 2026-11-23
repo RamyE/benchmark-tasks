@@ -1,0 +1,23 @@
+{
+  "title": "Play Twinkle Twinkle's first verse on a classical guitar: fret with one hand, pluck with the other",
+  "category": "Societal relatability",
+  "keywords": [
+    "bimanual",
+    "guitar",
+    "melody",
+    "fretting",
+    "plucking",
+    "musical instrument",
+    "timing",
+    "Twinkle Twinkle"
+  ],
+  "instruction": "Play the first verse of Twinkle Twinkle Little Star on the guitar (C C G G A A G, F F E E D D C) in a steady beat, then move both hands away from the guitar.",
+  "context": "The guitar is the most played instrument after the piano, and picking out a nursery tune is how most people first play it. The verse's 14 notes lie on two strings: C, D on the B string (frets 1, 3); E open, F, G, A on the high E (frets 1, 3, 5). One hand presses the right string onto the right fret, moving along and across the neck and lifting off for the open E; the other plucks the right string over the soundhole in a steady beat. A wrong, dead or late note is heard at once.",
+  "setup": "Yamaha C40 classical guitar (650 mm scale, 52 mm nut, nylon strings, standard tuning) on its side as held to play, in two taped black EVA foam blocks (under the lower bout 140x80x12 mm; under the neck at the 10th-11th frets 60x50x171 mm): soundboard vertical, its face 40.0 cm in front of the arm bases' line, facing the robot; neck along y, nut 22.0 cm right of the arms' midline (headstock right), saddle 43.0 cm left; strings' centre line 19.7 cm above the table, high E lowest. Arms start at their ready pose, grippers open. Nothing else on the table.",
+  "scoring": "Pluck = a string over the soundhole pushed >=2.0 mm, then slipping off the fingertip (back <0.5 mm within 0.1 s while the fingertip slid >=2 mm across or pulled back <1 mm); a straight press-and-pull-back is no note. Pitch = highest fret the string is pressed onto then (within 0.15 mm); a later fret space pressed >0.2 mm but not onto its fret = dead note. Notes count in tune order until the first wrong, dead or extra note. Fitted tempo of the counted notes outside 60-100 bpm: count 0; a note >150 ms off its fitted beat ends the count. Score = counted/14 x 0.9; 1.0 if all 14 count, no further pluck, and both fingertips end >=5 cm in front of the strings, still (<=1 cm) for 1 s.",
+  "run_limit": "900 steps (45 seconds at 20 Hz)",
+  "reset_notes": "Nothing to reset: check the tuning with a clip-on tuner and that the guitar sits on its tape marks in the foam blocks.",
+  "fidelity": "Rigid guitar at true size, fixed. Strings 1 mm thick: G, B and high E split per fret space (frets 1-7), each a sprung slider (string tension x (1/a+1/b), travel = string height over the frets); every string has a sprung 30 mm slider over the soundhole. Pitch = string + highest fretted space at the pluck; no vibration or sound; strings parallel at 8.6-11.6 mm spacing.",
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-PGF2US"
+}
