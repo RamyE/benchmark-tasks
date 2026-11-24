@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="820" viewBox="0 0 1180 820">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="590.0" y="28" font-size="18" text-anchor="middle" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">Candle board wiring (Arduino Nano, 5 V) - candles.ino</text>
+<rect x="470" y="90" width="220" height="560" rx="6" stroke="#000" fill="#eef3fb" stroke-width="2"/>
+<text x="580.0" y="114" font-size="15" text-anchor="middle" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">Arduino Nano</text>
+<text x="580.0" y="132" font-size="11" text-anchor="middle" fill="#000" font-family="Helvetica,Arial,sans-serif">(ATmega328P, 5 V / 16 MHz)</text>
+<text x="478" y="138" font-size="12" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">A0</text>
+<text x="478" y="168" font-size="12" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">A1</text>
+<text x="478" y="198" font-size="12" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">A2</text>
+<text x="478" y="228" font-size="12" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">A3</text>
+<text x="478" y="288" font-size="12" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">A4</text>
+<text x="478" y="318" font-size="12" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">A5</text>
+<text x="478" y="348" font-size="12" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">A6</text>
+<text x="478" y="378" font-size="12" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">A7</text>
+<text x="478" y="448" font-size="12" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">5V</text>
+<text x="478" y="488" font-size="12" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">GND</text>
+<text x="478" y="548" font-size="12" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">VIN</text>
+<text x="682" y="138" font-size="12" text-anchor="end" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">D3</text>
+<text x="682" y="168" font-size="12" text-anchor="end" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">D5</text>
+<text x="682" y="198" font-size="12" text-anchor="end" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">D6</text>
+<text x="682" y="228" font-size="12" text-anchor="end" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">D9</text>
+<text x="682" y="308" font-size="12" text-anchor="end" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">D10</text>
+<text x="682" y="388" font-size="12" text-anchor="end" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">D2</text>
+<text x="682" y="448" font-size="12" text-anchor="end" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">D13 (on-board LED)</text>
+<text x="682" y="548" font-size="12" text-anchor="end" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">USB (log / flashing)</text>
+<rect x="20" y="70" width="330" height="520" rx="6" stroke="#777" fill="#fafafa" stroke-width="1.2" stroke-dasharray="6,4"/>
+<text x="30" y="90" font-size="12" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">Candle k (k = 0..3), one of four identical</text>
+<text x="30" y="106" font-size="10" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif">5 wires per candle down the tube: +5V, GND, LIGHT_k, HALL_k, LED_k</text>
+<text x="40" y="138" font-size="11" text-anchor="start" fill="#1f4fbf" font-family="Helvetica,Arial,sans-serif">Q1 ALS-PT19-315C (top-view phototransistor) at the tip</text>
+<line x1="100" y1="150" x2="100" y2="170" stroke="#c00000" stroke-width="1.6"/>
+<text x="106" y="160" font-size="10" text-anchor="start" fill="#c00000" font-family="Helvetica,Arial,sans-serif">C (VCC pad) -&gt; +5V</text>
+<circle cx="100" cy="190" r="18" stroke="#1f4fbf" fill="none" stroke-width="1.6"/>
+<text x="100" y="194" font-size="11" text-anchor="middle" fill="#1f4fbf" font-family="Helvetica,Arial,sans-serif">Q1</text>
+<line x1="100" y1="208" x2="100" y2="235" stroke="#1f4fbf" stroke-width="1.6"/>
+<text x="106" y="228" font-size="10" text-anchor="start" fill="#1f4fbf" font-family="Helvetica,Arial,sans-serif">E (OUT pad)</text>
+<line x1="100" y1="235" x2="330" y2="235" stroke="#1f4fbf" stroke-width="1.6"/>
+<circle cx="270" cy="235" r="3" stroke="#1f4fbf" fill="#1f4fbf" stroke-width="1"/>
+<line x1="270" y1="235" x2="270" y2="249.5" stroke="#1f4fbf" stroke-width="1.6"/>
+<line x1="270" y1="285.5" x2="270" y2="300" stroke="#1f4fbf" stroke-width="1.6"/>
+<rect x="264" y="249.5" width="12" height="36" rx="0" stroke="#1f4fbf" fill="#fff" stroke-width="1.6"/>
+<text x="280" y="271.5" font-size="10" text-anchor="start" fill="#1f4fbf" font-family="Helvetica,Arial,sans-serif">R1 10k (on board)</text>
+<line x1="270" y1="300" x2="270" y2="306" stroke="#000" stroke-width="1.6"/>
+<line x1="262" y1="306" x2="278" y2="306" stroke="#000" stroke-width="1.6"/>
+<line x1="265" y1="310" x2="275" y2="310" stroke="#000" stroke-width="1.6"/>
+<line x1="268" y1="314" x2="272" y2="314" stroke="#000" stroke-width="1.6"/>
+<text x="160" y="252" font-size="11" text-anchor="start" fill="#1f4fbf" font-family="Helvetica,Arial,sans-serif">LIGHT_k -&gt; A0..A3</text>
+<text x="40" y="330" font-size="11" text-anchor="start" fill="#107010" font-family="Helvetica,Arial,sans-serif">U1 DRV5053VAQDBZR (SOT-23) 9 mm below tip, face up</text>
+<rect x="80" y="345" width="60" height="50" rx="0" stroke="#107010" fill="#fff" stroke-width="1.6"/>
+<text x="110" y="375" font-size="11" text-anchor="middle" fill="#107010" font-family="Helvetica,Arial,sans-serif">U1</text>
+<line x1="80" y1="355" x2="50" y2="355" stroke="#c00000" stroke-width="1.6"/>
+<text x="48" y="351" font-size="9" text-anchor="end" fill="#c00000" font-family="Helvetica,Arial,sans-serif">VCC</text>
+<line x1="80" y1="385" x2="50" y2="385" stroke="#000" stroke-width="1.6"/>
+<text x="48" y="389" font-size="9" text-anchor="end" fill="#000" font-family="Helvetica,Arial,sans-serif">GND</text>
+<line x1="140" y1="370" x2="330" y2="370" stroke="#107010" stroke-width="1.6"/>
+<text x="160" y="364" font-size="11" text-anchor="start" fill="#107010" font-family="Helvetica,Arial,sans-serif">OUT: HALL_k -&gt; A4..A7</text>
+<text x="144" y="410" font-size="10" text-anchor="start" fill="#107010" font-family="Helvetica,Arial,sans-serif">C1 10 nF 0402 across VCC-GND, soldered on U1's legs</text>
+<text x="144" y="424" font-size="10" text-anchor="start" fill="#107010" font-family="Helvetica,Arial,sans-serif">C2 100 nF per candle at the board connector (+5V-GND)</text>
+<text x="40" y="460" font-size="11" text-anchor="start" fill="#c06000" font-family="Helvetica,Arial,sans-serif">D1 5 mm flat-top amber LED (590 nm), frosted: the flame</text>
+<line x1="330" y1="495" x2="270" y2="495" stroke="#c06000" stroke-width="1.6"/>
+<line x1="190" y1="495" x2="212.0" y2="495" stroke="#c06000" stroke-width="1.6"/>
+<line x1="248.0" y1="495" x2="270" y2="495" stroke="#c06000" stroke-width="1.6"/>
+<rect x="212.0" y="489" width="36" height="12" rx="0" stroke="#c06000" fill="#fff" stroke-width="1.6"/>
+<text x="230.0" y="485" font-size="10" text-anchor="middle" fill="#c06000" font-family="Helvetica,Arial,sans-serif">R2 330R (on board)</text>
+<line x1="190" y1="495" x2="160" y2="495" stroke="#c06000" stroke-width="1.6"/>
+<polyline points="160,483 160,507 140,495 160,483" stroke="#c06000" stroke-width="1.6" fill="none"/>
+<line x1="140" y1="483" x2="140" y2="507" stroke="#c06000" stroke-width="1.6"/>
+<line x1="140" y1="495" x2="110" y2="495" stroke="#c06000" stroke-width="1.6"/>
+<line x1="110" y1="495" x2="110" y2="501" stroke="#000" stroke-width="1.6"/>
+<line x1="102" y1="501" x2="118" y2="501" stroke="#000" stroke-width="1.6"/>
+<line x1="105" y1="505" x2="115" y2="505" stroke="#000" stroke-width="1.6"/>
+<line x1="108" y1="509" x2="112" y2="509" stroke="#000" stroke-width="1.6"/>
+<text x="190" y="530" font-size="11" text-anchor="start" fill="#c06000" font-family="Helvetica,Arial,sans-serif">LED_k &lt;- D3 / D5 / D6 / D9 (PWM flicker)</text>
+<text x="190" y="545" font-size="10" text-anchor="start" fill="#c06000" font-family="Helvetica,Arial,sans-serif">~9 mA at full brightness</text>
+<polyline points="330,235 420,235 420,134 470,134" stroke="#1f4fbf" stroke-width="1.2" fill="none"/>
+<polyline points="330,370 440,370 440,284 470,284" stroke="#107010" stroke-width="1.2" fill="none"/>
+<line x1="330" y1="164" x2="470" y2="164" stroke="#1f4fbf" stroke-width="1.2" stroke-dasharray="4,3"/>
+<line x1="330" y1="194" x2="470" y2="194" stroke="#1f4fbf" stroke-width="1.2" stroke-dasharray="4,3"/>
+<line x1="330" y1="224" x2="470" y2="224" stroke="#1f4fbf" stroke-width="1.2" stroke-dasharray="4,3"/>
+<line x1="330" y1="314" x2="470" y2="314" stroke="#107010" stroke-width="1.2" stroke-dasharray="4,3"/>
+<line x1="330" y1="344" x2="470" y2="344" stroke="#107010" stroke-width="1.2" stroke-dasharray="4,3"/>
+<line x1="330" y1="374" x2="470" y2="374" stroke="#107010" stroke-width="1.2" stroke-dasharray="4,3"/>
+<text x="340" y="244" font-size="10" text-anchor="start" fill="#1f4fbf" font-family="Helvetica,Arial,sans-serif">k=0..3 -&gt; A0..A3</text>
+<text x="345" y="278" font-size="10" text-anchor="start" fill="#107010" font-family="Helvetica,Arial,sans-serif">k=0..3 -&gt; A4..A7</text>
+<line x1="330" y1="495" x2="400" y2="495" stroke="#c06000" stroke-width="1.2"/>
+<line x1="400" y1="495" x2="400" y2="670" stroke="#c06000" stroke-width="1.2"/>
+<line x1="400" y1="670" x2="760" y2="670" stroke="#c06000" stroke-width="1.2"/>
+<line x1="760" y1="670" x2="760" y2="134" stroke="#c06000" stroke-width="1.2"/>
+<line x1="760" y1="134" x2="690" y2="134" stroke="#c06000" stroke-width="1.2"/>
+<line x1="690" y1="164" x2="760" y2="164" stroke="#c06000" stroke-width="1.2" stroke-dasharray="4,3"/>
+<line x1="690" y1="194" x2="760" y2="194" stroke="#c06000" stroke-width="1.2" stroke-dasharray="4,3"/>
+<line x1="690" y1="224" x2="760" y2="224" stroke="#c06000" stroke-width="1.2" stroke-dasharray="4,3"/>
+<text x="770" y="179" font-size="11" text-anchor="start" fill="#c06000" font-family="Helvetica,Arial,sans-serif">LED_0..3</text>
+<line x1="470" y1="444" x2="420" y2="444" stroke="#c00000" stroke-width="2"/>
+<text x="464" y="439" font-size="10" text-anchor="end" fill="#c00000" font-family="Helvetica,Arial,sans-serif">+5V bus</text>
+<line x1="470" y1="484" x2="420" y2="484" stroke="#000" stroke-width="2"/>
+<text x="464" y="479" font-size="10" text-anchor="end" fill="#000" font-family="Helvetica,Arial,sans-serif">GND bus</text>
+<rect x="110" y="640" width="80" height="120" rx="4" stroke="#000" fill="#f4f4f4" stroke-width="1.6"/>
+<text x="150" y="690" font-size="14" text-anchor="middle" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">9 V</text>
+<text x="150" y="708" font-size="10" text-anchor="middle" fill="#000" font-family="Helvetica,Arial,sans-serif">PP3 alkaline</text>
+<text x="150" y="722" font-size="10" text-anchor="middle" fill="#000" font-family="Helvetica,Arial,sans-serif">(~100 mA: ~4 h)</text>
+<line x1="150" y1="640" x2="150" y2="625" stroke="#c00000" stroke-width="2"/>
+<line x1="150" y1="625" x2="300" y2="625" stroke="#c00000" stroke-width="2"/>
+<text x="154" y="636" font-size="12" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif">+</text>
+<rect x="300" y="615" width="50" height="20" rx="0" stroke="#000" fill="#fff" stroke-width="1.6"/>
+<text x="325" y="650" font-size="10" text-anchor="middle" fill="#000" font-family="Helvetica,Arial,sans-serif">S1 slide switch</text>
+<line x1="350" y1="625" x2="440" y2="625" stroke="#c00000" stroke-width="2"/>
+<line x1="440" y1="625" x2="440" y2="544" stroke="#c00000" stroke-width="2"/>
+<line x1="440" y1="544" x2="470" y2="544" stroke="#c00000" stroke-width="2"/>
+<text x="190" y="612" font-size="10" text-anchor="start" fill="#c00000" font-family="Helvetica,Arial,sans-serif">9 V -&gt; S1 -&gt; VIN (Nano regulator makes 5V)</text>
+<line x1="150" y1="760" x2="150" y2="780" stroke="#000" stroke-width="2"/>
+<line x1="150" y1="780" x2="150" y2="786" stroke="#000" stroke-width="1.6"/>
+<line x1="142" y1="786" x2="158" y2="786" stroke="#000" stroke-width="1.6"/>
+<line x1="145" y1="790" x2="155" y2="790" stroke="#000" stroke-width="1.6"/>
+<line x1="148" y1="794" x2="152" y2="794" stroke="#000" stroke-width="1.6"/>
+<text x="164" y="790" font-size="10" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif">battery - to GND</text>
+<line x1="690" y1="304" x2="900" y2="304" stroke="#555" stroke-width="1.6"/>
+<line x1="900" y1="304" x2="927.0" y2="304" stroke="#555" stroke-width="1.6"/>
+<line x1="963.0" y1="304" x2="990" y2="304" stroke="#555" stroke-width="1.6"/>
+<rect x="927.0" y="298" width="36" height="12" rx="0" stroke="#555" fill="#fff" stroke-width="1.6"/>
+<text x="945.0" y="294" font-size="10" text-anchor="middle" fill="#555" font-family="Helvetica,Arial,sans-serif">R3 220R</text>
+<polyline points="1010,292 1010,316 1030,304 1010,292" stroke="#555" stroke-width="1.6" fill="none"/>
+<line x1="1030" y1="292" x2="1030" y2="316" stroke="#555" stroke-width="1.6"/>
+<line x1="990" y1="304" x2="1010" y2="304" stroke="#555" stroke-width="1.6"/>
+<line x1="1030" y1="304" x2="1060" y2="304" stroke="#555" stroke-width="1.6"/>
+<line x1="1060" y1="304" x2="1060" y2="310" stroke="#000" stroke-width="1.6"/>
+<line x1="1052" y1="310" x2="1068" y2="310" stroke="#000" stroke-width="1.6"/>
+<line x1="1055" y1="314" x2="1065" y2="314" stroke="#000" stroke-width="1.6"/>
+<line x1="1058" y1="318" x2="1062" y2="318" stroke="#000" stroke-width="1.6"/>
+<text x="900" y="262" font-size="11" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif">ALL-OUT lamp: 3 mm white LED in the cake's</text>
+<text x="900" y="276" font-size="11" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif">rear wall, facing the side camera</text>
+<line x1="690" y1="384" x2="960" y2="384" stroke="#555" stroke-width="1.6"/>
+<line x1="960" y1="374" x2="960" y2="394" stroke="#555" stroke-width="1.6"/>
+<line x1="980" y1="374" x2="980" y2="394" stroke="#555" stroke-width="1.6"/>
+<line x1="955" y1="368" x2="985" y2="368" stroke="#555" stroke-width="1.6"/>
+<line x1="980" y1="384" x2="1010" y2="384" stroke="#555" stroke-width="1.6"/>
+<line x1="1010" y1="384" x2="1010" y2="390" stroke="#000" stroke-width="1.6"/>
+<line x1="1002" y1="390" x2="1018" y2="390" stroke="#000" stroke-width="1.6"/>
+<line x1="1005" y1="394" x2="1015" y2="394" stroke="#000" stroke-width="1.6"/>
+<line x1="1008" y1="398" x2="1012" y2="398" stroke="#000" stroke-width="1.6"/>
+<text x="900" y="414" font-size="11" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif">S2 RESET: 6 mm tactile button to GND</text>
+<text x="900" y="428" font-size="10" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif">(INPUT_PULLUP; hold at power-on = verbose)</text>
+<text x="700" y="462" font-size="10" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif">blinks 4 Hz = reference ERR</text>
+<text x="700" y="562" font-size="10" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif">10 cm USB extension to a notch in the</text>
+<text x="700" y="576" font-size="10" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif">rear wall; any PC serial terminal, 115200 baud</text>
+<text x="560" y="700" font-size="13" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif" font-weight="bold">Pin map</text>
+<text x="560" y="720" font-size="10" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif">A0-A3  LIGHT_0..3   phototransistor emitter, 10 k to GND (lit ~300-800 counts, dark &lt; 25 % of lit)</text>
+<text x="560" y="736" font-size="10" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif">A4-A7  HALL_0..3    DRV5053VA OUT (zero field ~1.0 V = ~205 counts; -90 mV/mT; either polarity used)</text>
+<text x="560" y="752" font-size="10" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif">D3 D5 D6 D9  LED_0..3   330 R -&gt; amber flame LED -&gt; GND (PWM flicker; blanked 0.6 ms for each light read)</text>
+<text x="560" y="768" font-size="10" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif">D10  ALL-OUT lamp (220 R)    D2  reset button    D13  status    VIN  9 V via S1    5V  sensor supply</text>
+<text x="560" y="784" font-size="10" text-anchor="start" fill="#000" font-family="Helvetica,Arial,sans-serif">Candle k: 0 = (+x,+y) 45 deg, 1 = 135 deg, 2 = 225 deg, 3 = 315 deg (same order as the simulation)</text>
+</svg>
